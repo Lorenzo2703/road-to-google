@@ -146,6 +146,59 @@ road-to-google/
 | **Week 5** | Agent Development | 29-35 | LLMs, Agent Architectures, ADK, Testing, Deployment |
 | **Week 6** | Behavioral & Final | 36-42 | Behavioral, Googleyness, Mock Interviews, Application |
 
+### 📚 Supplementary Materials
+For topics that cross-cut multiple weeks or provide deep-dives into CS fundamentals:
+
+| Folder | Contents |
+|--------|----------|
+| `supplementary-material/` | Deep dives into OS, Math, and Advanced Algorithms |
+| `interview-questions-deep-dive.ipynb` | Specific behavioral and probabilistic questions |
+| `operating-systems-and-concurrency.ipynb` | Threads, Locks, Deadlocks, Context Switching |
+| `probability-and-combinatorics.ipynb` | N choose K, Expected Value, Bayes' Theorem |
+| `np-complete-and-heuristics.ipynb` | TSP, Knapsack, and Heuristic strategies |
+
+---
+
+## 🗺️ The 6-Week Roadmap
+
+### Week 1: Fundamentals & Basic Data Structures
+- Arrays, Hash Tables, Linked Lists, Stacks, Queues.
+- Big O Notation (Time/Space Complexity).
+- Edge Cases & Corner Cases.
+
+### Week 2: Intermediate DSA
+- Trees (BST, BFS/DFS).
+- Heaps & Priority Queues.
+- Recursion & Backtracking.
+- Sorting Algorithms & Interval Merging.
+
+### Week 3: Advanced DSA & Graph Theory
+- Graphs (BFS/DFS, Matrix vs Adjacency List).
+- Connectivity, Cycle Detection, and Shortest Paths (Dijkstra).
+- Dynamic Programming (1D & 2D).
+- Tries (Prefix Trees).
+- Greedy Algorithms.
+
+### Week 4: System Design & Infrastructure
+- Distributed Systems, Load Balancing, Caching, CDNs.
+- Databases (SQL vs NoSQL, Sharding, Replication).
+- API Design, SDK Development, and Backward Compatibility.
+- Observability (Logging, Metrics, Tracing).
+- Cloud Deployment (K8s, Docker, CI/CD).
+- **Operating Systems**: Processes, Threads, Concurrency, Mutexes, Locks.
+
+### Week 5: Agent Development & LLMs
+- LLM Fundamentals (Tokenization, Prompt Engineering).
+- Agent Architectures (ReAct, Multi-Agent Orchestration).
+- Google ADK Deep Dive & Tool Use.
+- Testing, Debugging, and Safety Guardrails for AI.
+
+### Week 6: Behavioral & Final Polish
+- STAR Method & Behavioral Interviewing.
+- Googleyness & Leadership (GCA).
+- Full Mock Interviews (Coding, Design, Behavioral).
+- Role-Specific Pitch & Portfolio Optimization.
+
 ---
 
 ## 🚀 Getting Started

@@ -33,3 +33,7 @@ desktop.ini
 notes/personal/
 *.secret
 *.credentials
+
+# Personal Documents
+*.pdf
+resume.pdf
