@@ -78,7 +78,7 @@
 
 | Service | Purpose | When to Use |
 |---------|---------|-------------|
-| Cloud Run | Serverless containers | Stateless APIs, agents |
+| Cloud Run | Serverless containers | Stateless APIs, Microservices |
 | GKE | Kubernetes | Complex workloads, microservices |
 | Cloud Functions | Serverless functions | Simple event handlers |
 | Pub/Sub | Message queue | Async communication |

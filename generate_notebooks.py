@@ -52,7 +52,7 @@ def create_notebook(path, title, day, topic, is_coding=True):
             "- [ ] Concept 2\n"
         ]
     })
-
+    
     notebook = {
         "cells": cells,
         "metadata": {
@@ -73,6 +73,16 @@ def create_notebook(path, title, day, topic, is_coding=True):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, 'w', encoding='utf-8') as f:
         json.dump(notebook, f, indent=1)
+
+# Week 1
+w1 = 'week-01-fundamentals'
+create_notebook(f'{w1}/day-01-arrays-and-strings.ipynb', 'Arrays & Strings', 1, 'Week 1 — DSA Foundations')
+create_notebook(f'{w1}/day-02-hashmaps-and-sets.ipynb', 'HashMaps & Sets', 2, 'Week 1 — DSA Foundations')
+create_notebook(f'{w1}/day-03-two-pointers.ipynb', 'Two Pointers', 3, 'Week 1 — DSA Foundations')
+create_notebook(f'{w1}/day-04-sliding-window.ipynb', 'Sliding Window', 4, 'Week 1 — DSA Foundations')
+create_notebook(f'{w1}/day-05-stacks-and-queues.ipynb', 'Stacks & Queues', 5, 'Week 1 — DSA Foundations')
+create_notebook(f'{w1}/day-06-linked-lists.ipynb', 'Linked Lists', 6, 'Week 1 — DSA Foundations')
+create_notebook(f'{w1}/day-07-review-and-mock.ipynb', 'Review & Mock', 7, 'Week 1 — DSA Foundations')
 
 # Week 2
 w2 = 'week-02-intermediate-dsa'
@@ -98,21 +108,21 @@ create_notebook(f'{w3}/day-21-review-and-mock.ipynb', 'Review & Mock', 21, 'Week
 w4 = 'week-04-system-design'
 create_notebook(f'{w4}/day-22-system-design-fundamentals.ipynb', 'System Design Fundamentals', 22, 'Week 4 — System Design', False)
 create_notebook(f'{w4}/day-23-designing-distributed-systems.ipynb', 'Designing Distributed Systems', 23, 'Week 4 — System Design', False)
-create_notebook(f'{w4}/day-24-designing-an-agent-orchestrator.ipynb', 'Designing an Agent Orchestrator', 24, 'Week 4 — System Design', False)
-create_notebook(f'{w4}/day-25-designing-an-sdk-platform.ipynb', 'Designing an SDK Platform', 25, 'Week 4 — System Design', False)
+create_notebook(f'{w4}/day-24-caching-and-load-balancing.ipynb', 'Caching & Load Balancing', 24, 'Week 4 — System Design', False)
+create_notebook(f'{w4}/day-25-databases-and-sharding.ipynb', 'Databases & Sharding', 25, 'Week 4 — System Design', False)
 create_notebook(f'{w4}/day-26-observability-and-monitoring.ipynb', 'Observability & Monitoring', 26, 'Week 4 — System Design', False)
 create_notebook(f'{w4}/day-27-cloud-deployment-patterns.ipynb', 'Cloud Deployment Patterns', 27, 'Week 4 — System Design', False)
 create_notebook(f'{w4}/day-28-review-and-mock.ipynb', 'Review & Mock', 28, 'Week 4 — System Design', False)
 
 # Week 5
-w5 = 'week-05-agent-development'
-create_notebook(f'{w5}/day-29-llm-fundamentals.ipynb', 'LLM Fundamentals', 29, 'Week 5 — Agent Development')
-create_notebook(f'{w5}/day-30-agent-architectures.ipynb', 'Agent Architectures', 30, 'Week 5 — Agent Development')
-create_notebook(f'{w5}/day-31-google-adk-deep-dive.ipynb', 'Google ADK Deep Dive', 31, 'Week 5 — Agent Development')
-create_notebook(f'{w5}/day-32-tool-use-and-function-calling.ipynb', 'Tool Use & Function Calling', 32, 'Week 5 — Agent Development')
-create_notebook(f'{w5}/day-33-testing-debugging-agents.ipynb', 'Testing & Debugging Agents', 33, 'Week 5 — Agent Development')
-create_notebook(f'{w5}/day-34-agent-deployment-observability.ipynb', 'Agent Deployment & Observability', 34, 'Week 5 — Agent Development')
-create_notebook(f'{w5}/day-35-review-and-mock.ipynb', 'Review & Mock', 35, 'Week 5 — Agent Development')
+w5 = 'week-05-cloud-sre'
+create_notebook(f'{w5}/day-29-linux-internals.ipynb', 'Linux Internals', 29, 'Week 5 — Cloud SRE')
+create_notebook(f'{w5}/day-30-networking-fundamentals.ipynb', 'Networking Fundamentals', 30, 'Week 5 — Cloud SRE')
+create_notebook(f'{w5}/day-31-slis-slos-slas.ipynb', 'SLIs, SLOs, SLAs', 31, 'Week 5 — Cloud SRE')
+create_notebook(f'{w5}/day-32-incident-response.ipynb', 'Incident Response', 32, 'Week 5 — Cloud SRE')
+create_notebook(f'{w5}/day-33-capacity-planning.ipynb', 'Capacity Planning', 33, 'Week 5 — Cloud SRE')
+create_notebook(f'{w5}/day-34-automation-and-toil.ipynb', 'Automation & Toil', 34, 'Week 5 — Cloud SRE')
+create_notebook(f'{w5}/day-35-review-and-mock.ipynb', 'Review & Mock', 35, 'Week 5 — Cloud SRE')
 
 # Week 6
 w6 = 'week-06-behavioral-and-final'
