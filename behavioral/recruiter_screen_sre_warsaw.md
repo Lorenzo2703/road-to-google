@@ -7,13 +7,14 @@ This document prepares you for the initial recruiter screening and early intervi
 ## 1. The Role, Responsibilities, and Hiring Process
 
 ### The Role
-Site Reliability Engineering (SRE) at Google is what happens when you ask a software engineer to design an operations team. The **Google Warsaw** office is one of the largest and most important engineering hubs for **Google Cloud** in Europe. As an SRE in Warsaw, you will likely be working on massive, globally distributed systems like Borg, Compute Engine, or core data platforms. The core mission is to ensure Google's services are fast, highly available, and scalable.
+Site Reliability Engineering (SRE) combines software and systems engineering to build and run large-scale, massively distributed, fault-tolerant systems for Google Cloud. As part of the Technical Infrastructure team in Warsaw, you act as the "engineers' engineers." The role involves a deep intellectual curiosity—"voiding warranties by taking things apart so we can rebuild them"—to ensure both internally critical and externally-visible systems meet customer reliability and uptime needs with a fast rate of improvement. 
 
 ### Key Responsibilities
-*   **Engineering Reliability**: Writing code (Go, Python, C++, Java) to automate operations, eliminate toil, and build resilient infrastructure.
-*   **Incident Management**: Participating in on-call rotations, triaging complex production issues across the network, OS, and application layers, and leading blameless postmortems.
-*   **Capacity & Performance**: Designing systems to handle hyper-growth, load balancing, and minimizing tail latency.
-*   **SLOs & Error Budgets**: Working closely with product development teams to define Service Level Objectives (SLOs) and using error budgets to balance feature velocity with reliability.
+*   **Full Lifecycle Management**: Engaging and improving services from inception and design through deployment, operation, and refinement.
+*   **Pre-Launch Consulting**: Creating and helping services before they go live via system design consulting, capacity planning, launch reviews, and developing software frameworks.
+*   **Maintaining System Health**: Actively measuring and monitoring availability, latency, and overall system health while keeping an ever-watchful eye on capacity and performance.
+*   **Automation & Scaling**: Optimizing existing systems, building infrastructure, and eliminating routine work through automation to scale systems sustainably and improve velocity.
+*   **Blameless Culture**: Practicing sustainable incident response within a blame-free environment that encourages collaboration and risk-taking.
 
 ### The Hiring Process
 1.  **Recruiter Screen (30-45 mins)**: Focuses on your background, career goals, Googleyness, and high-level technical fit. They will test your communication and passion for SRE.
@@ -29,14 +30,14 @@ Site Reliability Engineering (SRE) at Google is what happens when you ask a soft
 ## 2. My Relevant Experience, Qualifications, and Career Goals
 
 ### Relevant Experience & Qualifications
-*   **Massive Scale Architectures**: I spearheaded the cloud architecture for the national institution registry (**FNOMCeO**), which supports over **460,000+ users**. This required deep knowledge of high-availability, fault-tolerance, and consistent performance under load.
-*   **Full-Stack Systems Expertise**: I have hands-on experience across the entire lifecycle. From backend services (Java, Python) to infrastructure automation (Docker, Kubernetes, AWS) and deep Linux internals. I don't just write application code; I understand how it interacts with the OS and network.
-*   **Research to Production**: As a Researcher in Horizon Europe Projects (e.g., ARIEN), I developed highly available data ingestion pipelines for real-time tracking of complex flows. I know how to translate theoretical performance optimizations (like edge inference) into robust production systems.
-*   **Grit and Time Management**: I successfully balanced full-time, high-level engineering roles while completing my Master's and Bachelor's degrees. I am accustomed to high-pressure environments, making me well-prepared for the incident-response rigor of Google SRE.
+*   **Designing & Troubleshooting Distributed Systems**: I spearheaded the cloud architecture for the national institution registry (**FNOMCeO**), supporting over **460,000+ users**. This directly aligns with the requirement to design, analyze, and troubleshoot large-scale, fault-tolerant distributed systems.
+*   **Computing, Storage, & Networking Expertise**: I have hands-on experience across the entire technical stack. From backend software development (Java, Python) to infrastructure, storage, and networking (Docker, Kubernetes, AWS, Linux internals). I am comfortable taking complex systems apart to understand and optimize them.
+*   **Debugging & Automation**: Through my work, I've consistently eliminated manual work by building infrastructure as code and automating deployments. I possess a strong ability to debug across application and network layers, and I treat operations as a software optimization challenge.
+*   **Intellectual Curiosity & Problem Solving**: As a Researcher in Horizon Europe Projects (e.g., ARIEN), I tackled ambiguous problems like edge inference performance. My research background highlights my intellectual curiosity and excellent problem-solving and communication skills, making me well-suited for Google's collaborative, blame-free culture.
 
 ### Career Goals
-*   **Short-Term**: I want to transition from building national-scale enterprise architectures to operating and scaling the foundational infrastructure of the internet at Google Warsaw. I want to deeply master Google's internal stack (Borg, Spanner) and immediately contribute to reducing toil through automation.
-*   **Long-Term**: I aim to become a domain expert in distributed systems reliability and Non-Abstract Large System Design (NALSD). My goal is to lead architectural reviews for new Google Cloud products, ensuring they are designed for failure and extreme scale from Day 1.
+*   **Short-Term**: I want to bring my software engineering expertise to Google Cloud's Technical Infrastructure team in Warsaw. I am eager to dive into capacity planning, system design consulting, and automating routine tasks to sustainably scale existing systems.
+*   **Long-Term**: I aim to become a deeply trusted "engineer's engineer," guiding new services through rigorous launch reviews and serving as a domain expert in distributed systems reliability and Non-Abstract Large System Design (NALSD).
 
 ---
 
@@ -45,12 +46,12 @@ Site Reliability Engineering (SRE) at Google is what happens when you ask a soft
 *Always have questions prepared. It demonstrates deep interest and system-level thinking.*
 
 ### For the Recruiter:
-1.  *"I know Warsaw is a massive hub for Google Cloud. Is the SRE team I am being considered for focused more on core infrastructure (like Borg/network) or specific customer-facing GCP products?"*
-2.  *"What does the typical onboarding process (often called 'SRE Bootcamp') look like for someone joining the Warsaw office?"*
-3.  *"Are there specific technical gaps the Warsaw SRE teams are currently trying to fill (e.g., more networking expertise vs. more software development expertise)?"*
+1.  *"The job description mentions being the 'engineers' engineers' within the Technical Infrastructure team. Are the Warsaw SRE teams currently more focused on optimizing existing Google Cloud systems, or building infrastructure for entirely new platforms?"*
+2.  *"What does the typical onboarding and mentorship process look like to ensure new SREs are ready to participate in system design consulting and launch reviews?"*
+3.  *"How is the Warsaw office structured in terms of self-direction? How much flexibility do SREs have to identify and work on meaningful automation projects?"*
 
 ### For an SRE / Engineering Manager:
-1.  *"Can you walk me through a recent complex incident your team handled, and how the subsequent blameless postmortem led to a systemic improvement in your architecture?"*
-2.  *"How does your specific team balance feature velocity with strict error budgets? Is there ever pushback from product teams, and how is that resolved?"*
-3.  *"Google SRE famously aims to cap operational toil at 50%. How is your team currently tracking against that metric, and what kind of automation are you building to reduce it further?"*
-4.  *"What is the most unexpected failure mode you've encountered while scaling systems in your current domain?"*
+1.  *"The JD emphasizes a 'blame-free environment' and 'sustainable incident response.' Can you walk me through a recent complex incident, and how the blameless postmortem led to a systemic improvement rather than just a quick fix?"*
+2.  *"How does your team handle the balance between pre-launch consulting (like capacity planning and launch reviews) and maintaining the health of services already in production?"*
+3.  *"You mention 'voiding warranties by taking things apart.' What's the most interesting or complex system component your team recently had to take apart and rebuild to scale sustainably?"*
+4.  *"How do you measure the success of automation efforts? Is there a specific target for how much routine work your team aims to eliminate each quarter?"*
