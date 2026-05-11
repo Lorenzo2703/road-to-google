@@ -59,6 +59,36 @@ Be ready to describe these simple PoCs as evidence of your hands-on SRE skills:
 10. **Network Traffic Analyzer (Networking)**:
     *   *Concept*: Developed a Python script using `tcpdump` and `scapy` to analyze packet captures, identifying sudden bandwidth spikes or unusual TCP retransmission rates.
     *   *Why it matters*: Shows you aren't afraid of the **network layer** and can debug issues below the application stack.
+11. **Reverse Proxy & Load Balancer (Proxying)**:
+    *   *Concept*: Configured Nginx (or HAProxy) as a reverse proxy with sticky sessions and active health checks to evenly distribute traffic across multiple backend Node.js servers.
+    *   *Why it matters*: Demonstrates core understanding of **traffic routing**, TLS termination, and proxy layer resiliency.
+12. **Frontend Asset CDN & Caching (Frontend/Proxying)**:
+    *   *Concept*: Set up a Varnish Cache or Cloudflare worker to serve static Angular/React assets (e.g., from the ARIEN project) from the edge, implementing aggressive Cache-Control headers and ETag invalidation.
+    *   *Why it matters*: Shows you understand **client-side latency reduction** and how to relieve backend pressure.
+13. **Distributed Tracing (Telemetry)**:
+    *   *Concept*: Instrumented a Python and Java microservice pair using OpenTelemetry and Jaeger to trace a single request's latency across both services.
+    *   *Why it matters*: Proves you can debug **microservice bottlenecks** and track down exactly where a request is slowing down.
+14. **Service Mesh Implementation (Backend/Proxying)**:
+    *   *Concept*: Deployed a mini Istio or Linkerd service mesh on a local Kubernetes cluster to automatically encrypt pod-to-pod traffic (mTLS) and collect network metrics without modifying application code.
+    *   *Why it matters*: Demonstrates advanced knowledge of **secure, observable microservice architectures**.
+15. **Canary Deployment Script (Backend/CI-CD)**:
+    *   *Concept*: Wrote a script that shifts 5% of traffic to a new version of a Dockerized application, monitors the HTTP 500 error rate via Prometheus for 10 minutes, and automatically rolls back if errors exceed 1%.
+    *   *Why it matters*: Shows a deep understanding of **safe rollout strategies** and automated error budgeting.
+16. **Database Read-Replica Auto-Scaler (Backend/DB)**:
+    *   *Concept*: Created a monitor that tracks PostgreSQL CPU usage; if it hits 80%, a script automatically spins up a new read-replica container and adds it to the load balancer pool.
+    *   *Why it matters*: Proves you know how to handle **stateful scaling** and database read-heavy loads.
+17. **Client-Side Telemetry Aggregator (Frontend/Telemetry)**:
+    *   *Concept*: Built a lightweight JavaScript snippet that catches unhandled frontend exceptions and performance metrics (like Time to First Byte) and beacons them to a centralized logging server.
+    *   *Why it matters*: Demonstrates that your concept of reliability extends all the way to the **end-user experience (UX)**.
+18. **gRPC / Protobuf Migration (Backend/Networking)**:
+    *   *Concept*: Replaced a bulky REST JSON API between two backend services with a gRPC/Protobuf implementation, reducing payload size by 60% and cutting serialization latency.
+    *   *Why it matters*: Shows you can optimize **inter-service communication** at the protocol level.
+19. **Automated Database Backup and Restore Drill (Resilience)**:
+    *   *Concept*: Scheduled a cron job to dump a database to an S3-compatible local MinIO bucket nightly, and more importantly, a weekly script that restores the dump to a test container to verify data integrity.
+    *   *Why it matters*: Validates the core SRE mantra: **"Backups are useless; restores are what matter."**
+20. **eBPF System Profiler (Linux/Telemetry)**:
+    *   *Concept*: Experimented with BCC (BPF Compiler Collection) to write a script that traces kernel-level block I/O latency to identify exactly which process is causing disk thrashing.
+    *   *Why it matters*: Shows ultimate depth in **Linux internals** and next-generation tracing capabilities (highly relevant for modern Google SRE).
 
 ---
 
