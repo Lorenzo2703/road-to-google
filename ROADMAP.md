@@ -1,6 +1,6 @@
 # 🗺️ Detailed 6-Week Preparation Roadmap
 
-> Google Software Engineer, Google Cloud, SRE — Personalized Week-by-Week Plan
+> Google Site Reliability Engineering, Warsaw — Personalized Week-by-Week Plan
 
 ---
 

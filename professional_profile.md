@@ -1,10 +1,10 @@
 # 👤 Professional Profile: Lorenzo Giarè
 
-This document summarizes my background, core competencies, and unique value proposition for the **Software Engineer, Google Cloud, Site Reliability Engineering** role. This is a personalized "pitch deck" version of my experience, designed to showcase my fit for the division.
+This document summarizes my background, core competencies, and unique value proposition for the **Site Reliability Engineering, Google Warsaw** role. This is a personalized "pitch deck" version of my experience, designed to showcase my fit for the division.
 
 ---
 
-## 🚀 Why I Am a Great Fit for Google Cloud SRE
+## 🚀 Why I Am a Great Fit for Site Reliability Engineering at Google Warsaw
 
 ### 1. Massively Scalable Systems Experience
 I have engineered systems designed for high-concurrency and massive user bases, such as the national institution registry for **FNOMCeO**, built to support **460,000+ users**. I understand the architectural rigor required to ensure that systems remain performant, consistent, fault-tolerant, and secure at a national scale.
@@ -19,7 +19,7 @@ My stack spans the entire development lifecycle, which gives me an edge in diagn
 As a **Researcher in Horizon Europe Projects**, I have a proven track record of taking cutting-edge concepts and translating them into robust, highly-available applications. SRE requires a strong engineering approach to operations, and my research background gives me the analytical rigor to tackle ambiguous, complex failures through data-driven investigation.
 
 ### 4. High-Capacity Grit
-I have consistently balanced high-level professional responsibilities with academic excellence. I managed full-time engineering roles throughout my Master’s and Bachelor’s degrees, demonstrating the stamina, time-management skills, and incident-response readiness necessary for the fast-paced, high-stakes environment of Google Cloud SRE.
+I have consistently balanced high-level professional responsibilities with academic excellence. I managed full-time engineering roles throughout my Master’s and Bachelor’s degrees, demonstrating the stamina, time-management skills, and incident-response readiness necessary for the fast-paced, high-stakes environment of Google Warsaw's SRE.
 
 ---
 
@@ -27,7 +27,7 @@ I have consistently balanced high-level professional responsibilities with acade
 
 > "I am a Software Engineer with a deep obsession for building and maintaining intelligent, distributed, and highly reliable systems. My background is unique because I’ve spent the last 5 years building national-scale enterprise architectures while maintaining the analytical rigor of academic research. 
 >
-> I've built and optimized national registries supporting hundreds of thousands of users, and I treat operations as a software problem. I don't just write code; I architect ecosystems that are observable, fault-tolerant, and performant. I am passionate about Linux internals, automation, and distributed consensus, and I have the engineering maturity to ensure that Google Cloud’s infrastructure maintains the exceptional reliability that customers expect."
+> I've built and optimized national registries supporting hundreds of thousands of users, and I treat operations as a software problem. I don't just write code; I architect ecosystems that are observable, fault-tolerant, and performant. I am passionate about Linux internals, automation, and distributed consensus, and I have the engineering maturity to ensure that Google's infrastructure maintains the exceptional reliability that customers expect."
 
 ---
 

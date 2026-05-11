@@ -1,6 +1,6 @@
 # ✅ Complete Preparation Checklist
 
-> Track every step of your Google Software Engineer, Google Cloud, SRE preparation.
+> Track every step of your Google Site Reliability Engineering, Warsaw preparation.
 > Mark items with `[x]` as you complete them.
 
 ---
@@ -168,7 +168,7 @@
 - [ ] Round 3: Behavioral (30 min)
 
 ### Day 41: Role Fit & Portfolio
-- [ ] Prepare your "Why Google Cloud SRE?" answer
+- [ ] Prepare your "Why Google Warsaw?" answer
 - [ ] Prepare your "Why SRE?" answer
 
 ### Day 42: Final Review & Application

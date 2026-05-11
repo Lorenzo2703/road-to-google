@@ -1,4 +1,4 @@
-# 🎤 Interview Presentation — Google Cloud SRE
+# 🎤 Interview Presentation — Google Site Reliability Engineering, Warsaw
 
 > A structured presentation framework for positioning yourself as a strong SRE candidate.
 > Customize each section with your real experience and projects.
@@ -25,7 +25,7 @@
 
 ## Slide 2: Why This Google Role Fits Me
 
-### The Role: Software Engineer, Google Cloud, SRE
+### The Role: Site Reliability Engineering, Google Warsaw
 
 This role asks for someone who can:
 1. **Design and build** massively distributed, fault-tolerant systems

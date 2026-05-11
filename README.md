@@ -1,6 +1,6 @@
-# 🚀 Road to Google — Software Engineer, Google Cloud, SRE
+# 🚀 Road to Google — Site Reliability Engineering, Google Warsaw
 
-> A comprehensive, structured preparation plan to maximize chances of landing a **Software Engineer, Google Cloud, Site Reliability Engineering** role at Google.
+> A comprehensive, structured preparation plan to maximize chances of landing a **Site Reliability Engineering** role at **Google Warsaw**.
 
 [![Google](https://img.shields.io/badge/Google-Cloud%20SRE-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://www.google.com/about/careers/applications/u/2/jobs/results/138294370250957510-software-engineer-google-cloud-site-reliability-engineering)
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](#)
@@ -11,15 +11,16 @@
 
 ## 📋 About This Repository
 
-This repository contains a **42-day structured preparation plan** for the Google Software Engineer, Google Cloud, SRE position. Every day includes theory, practice problems, and hands-on coding exercises organized as Jupyter notebooks.
+This repository contains a **42-day structured preparation plan** for the Google Site Reliability Engineering (Warsaw) position. Every day includes theory, practice problems, and hands-on coding exercises organized as Jupyter notebooks.
 
 ### 🎯 Target Role
 
 | Field | Details |
 |-------|---------|
-| **Position** | Software Engineer, Google Cloud, Site Reliability Engineering |
+| **Position** | Site Reliability Engineering |
 | **Company** | Google |
-| **Team** | Google Cloud SRE |
+| **Location** | Warsaw, Poland |
+| **Team** | Site Reliability Engineering |
 | **Focus** | Distributed systems, Reliability, Uptime, Capacity, Performance |
 
 ### 📌 Role Responsibilities
