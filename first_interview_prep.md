@@ -109,10 +109,30 @@ If they hit you with a hard system design, Linux, or networking question you hav
 
 ---
 
-## 🛠️ Preparation Checklist
-- [ ] **Technical Readiness**: Mention you've been reviewing Advanced DSA, Linux Internals, and Networking (TCP/IP, DNS).
-- [ ] **Portfolio Walkthrough**: Have 2 specific stories ready for the "Tell me about a time you troubleshooted a complex distributed issue" question.
-- [ ] **Role-Specific Knowledge**: Be able to explicitly define SLIs, SLOs, SLAs, and Error Budgets.
+## 🛠️ Preparation Checklist & Answers
+
+### 1. Technical Readiness (How to mention it)
+**Script**: *"I've been heavily focused on deepening my SRE fundamentals. Currently, my daily routine involves solving Advanced DSA problems to keep my algorithmic thinking sharp, while simultaneously diving deep into Linux Internals—like kernel tracing and file systems—and networking fundamentals like TCP/IP congestion control and DNS resolution at scale."*
+
+### 2. Portfolio Walkthrough (2 STAR Stories for Troubleshooting/Scaling)
+
+**Story 1: FNOMCeO Transactional Bottlenecks (Scalability)**
+*   **Situation**: We were architecting the national registry for 460,000+ medical professionals.
+*   **Task**: We needed to run heavy analytical reporting without locking up the primary transactional database during peak traffic.
+*   **Action**: I assessed the "as-is" architecture and designed a decoupled "to-be" cloud architecture. I implemented a distributed cache and routed all reporting queries to a dedicated read-replica.
+*   **Result**: This completely segregated analytical traffic from transactional traffic, preventing database locks and ensuring high availability and consistent low latency at a national scale.
+
+**Story 2: ARIEN Pipeline Decoupling (Fault Tolerance)**
+*   **Situation**: We were ingesting highly sensitive, high-throughput financial and security data streams for a European AI security initiative.
+*   **Task**: The Python AI analytics engine occasionally experienced processing latency spikes, which risked dropping real-time data packets.
+*   **Action**: I architected an asynchronous data ingestion pipeline by introducing a Kafka message broker between the raw data streams and the AI processing engine.
+*   **Result**: The message queue safely buffered the data during AI processing spikes, ensuring zero data loss and allowing us to horizontally scale the Python consumer nodes independently.
+
+### 3. Role-Specific Knowledge (SRE Definitions)
+*   **SLI (Service Level Indicator)**: A quantitative measure of some aspect of the level of service provided. It's the actual metric you are measuring. *(Example: The percentage of HTTP GET requests that return a 200 OK within 100ms).*
+*   **SLO (Service Level Objective)**: A target value or range of values for a service level that is measured by an SLI. It's the internal engineering goal. *(Example: 99.9% of all requests in a rolling 30-day window must meet the SLI).*
+*   **SLA (Service Level Agreement)**: An explicit or implicit contract with your users that includes consequences if the SLO is missed. It's the business contract. *(Example: If uptime drops below 99.9%, we refund enterprise customers).*
+*   **Error Budget**: The allowable threshold for failure (100% minus the SLO). If your SLO is 99.9%, your error budget is 0.1%. SREs use this to balance reliability with feature velocity. *(Example: If we exhaust the 0.1% error budget, all new feature pushes are frozen until reliability is restored).*
 
 ---
 
