@@ -40,25 +40,25 @@ I have consistently balanced high-level professional responsibilities with acade
 
 ```mermaid
 flowchart TD
-    User([460k+ Users / Medical Professionals]) --> CDN[CDN / WAF]
-    CDN --> LB[Cloud Load Balancer]
+    User(["460k+ Users / Medical Professionals"]) --> CDN["CDN / WAF"]
+    CDN --> LB["Cloud Load Balancer"]
     
-    subgraph Highly Available Cloud Environment
-        LB --> API[API Gateway]
-        API --> Auth[Auth Service / JWT]
+    subgraph CloudEnv [Highly Available Cloud Environment]
+        LB --> API["API Gateway"]
+        API --> Auth["Auth Service / JWT"]
         
-        API --> CoreService[Core Registry Microservices\nJava/Spring/Python]
-        API --> ReportService[Reporting & Analytics Service]
+        API --> CoreService["Core Registry Microservices<br>Java/Spring/Python"]
+        API --> ReportService["Reporting & Analytics Service"]
         
-        CoreService <--> Cache[(Distributed Cache\ne.g., Redis)]
-        CoreService <--> DB[(Primary Relational DB\ne.g., PostgreSQL)]
+        CoreService <--> Cache[("Distributed Cache<br>e.g., Redis")]
+        CoreService <--> DB[("Primary Relational DB<br>e.g., PostgreSQL")]
         
-        DB -.Replication.-> ReadReplica[(Read Replica)]
+        DB -.Replication.-> ReadReplica[("Read Replica")]
         ReadReplica <--> ReportService
     end
     
     classDef cloud fill:#e3f2fd,stroke:#1565c0,stroke-width:2px;
-    class Highly Available Cloud Environment cloud;
+    class CloudEnv cloud;
 ```
 
 ### 2. ARIEN Horizon Europe Project (Data Ingestion & AI Visualization)
@@ -68,20 +68,20 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-    subgraph Data Ingestion
-        RawData[(Financial/Security Data Streams)] --> Ingestion[Data Ingestion Pipeline]
-        Ingestion --> MessageQueue[Message Queue / Kafka]
+    subgraph Ingestion_Sub [Data Ingestion]
+        RawData[("Financial/Security Data Streams")] --> Ingestion["Data Ingestion Pipeline"]
+        Ingestion --> MessageQueue["Message Queue / Kafka"]
     end
     
-    subgraph AI & Processing
-        MessageQueue --> AI_Engine[AI Analytics Engine\nPython]
-        AI_Engine --> ProcessedDB[(Processed Insights DB)]
+    subgraph AI_Sub [AI & Processing]
+        MessageQueue --> AI_Engine["AI Analytics Engine<br>Python"]
+        AI_Engine --> ProcessedDB[("Processed Insights DB")]
     end
     
-    subgraph Frontend Visualization
-        ProcessedDB --> BackendAPI[Backend API\nJava/Spring/Node.js]
-        BackendAPI <--> UI[Angular Web Application\nInteractive]
-        UI --> SecurityAnalyst([European Security Analyst])
+    subgraph UI_Sub [Frontend Visualization]
+        ProcessedDB --> BackendAPI["Backend API<br>Java/Spring/Node.js"]
+        BackendAPI <--> UI["Angular Web Application<br>Interactive"]
+        UI --> SecurityAnalyst(["European Security Analyst"])
     end
 ```
 
@@ -92,19 +92,19 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-    Sensors((Smartwatch Sensors\nAccelerometer & Gyro)) --> PreProcessing[Signal Pre-processing\nFiltering, Normalization, Windowing]
+    Sensors(("Smartwatch Sensors<br>Accelerometer & Gyro")) --> PreProcessing["Signal Pre-processing<br>Filtering, Normalization, Windowing"]
     
-    subgraph On-Device Memory < 258 KB
-        PreProcessing --> TFLite[TensorFlow Lite Engine]
-        TFLite --> CNN[Quantized 1D-CNN Model]
+    subgraph Edge_Sub [On-Device Memory < 258 KB]
+        PreProcessing --> TFLite["TensorFlow Lite Engine"]
+        TFLite --> CNN["Quantized 1D-CNN Model"]
     end
     
-    CNN --> Classifier{Gesture Detected?}
-    Classifier -- "Double Fist Clench" --> Action[Trigger SOS / Emergency Protocol]
-    Classifier -- "Normal Movement" --> Ignore[Discard / Sleep to Save Power]
+    CNN --> Classifier{"Gesture Detected?"}
+    Classifier -- "Double Fist Clench" --> Action["Trigger SOS / Emergency Protocol"]
+    Classifier -- "Normal Movement" --> Ignore["Discard / Sleep to Save Power"]
     
     classDef edge fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
-    class On-Device Memory < 258 KB edge;
+    class Edge_Sub edge;
 ```
 
 ### 4. PREVENT-PCP & NTTDATA (Infrastructure, Benchmarking, & Automation)
