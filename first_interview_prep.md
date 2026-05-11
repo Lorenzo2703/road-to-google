@@ -41,6 +41,24 @@ Be ready to describe these simple PoCs as evidence of your hands-on SRE skills:
 4.  **Zero-Downtime Deployment Pipeline (CI/CD)**:
     *   *Concept*: Set up a GitHub Action that builds a Docker image and performs a Rolling Update on a local cluster, ensuring there is never a moment where the service is completely down during a rollout.
     *   *Why it matters*: Shows you prioritize **uptime appropriate to customer needs**.
+5.  **Log Aggregation Pipeline (Observability)**:
+    *   *Concept*: Deployed a localized ELK/EFK stack (Elasticsearch, Filebeat, Kibana) using docker-compose to ingest, parse, and centralize unstructured logs from multiple microservices.
+    *   *Why it matters*: Demonstrates you understand how to make complex distributed systems **debuggable** across multiple nodes.
+6.  **Rate Limiting Middleware (Traffic Management)**:
+    *   *Concept*: Implemented a Redis-backed sliding window rate limiter in Python to protect a mock API from being overwhelmed by burst traffic.
+    *   *Why it matters*: Proves you understand **capacity planning**, overload protection, and "load shedding."
+7.  **Database Connection Pooler (Performance)**:
+    *   *Concept*: Set up PgBouncer in front of a PostgreSQL database to handle thousands of incoming connection requests by queuing them, preventing the DB from crashing under high concurrency.
+    *   *Why it matters*: Shows you understand **bottlenecks** and how to protect stateful layers from connection exhaustion.
+8.  **Automated SSL Rotation Script (Security/Automation)**:
+    *   *Concept*: Wrote a bash script that integrates with Let's Encrypt (Certbot), checks certificate expiration, auto-renews, and gracefully reloads the Nginx configuration without dropping active connections.
+    *   *Why it matters*: Highlights the elimination of **toil** and preventing embarrassing, human-error outages.
+9.  **Infrastructure as Code Sandbox (IaC)**:
+    *   *Concept*: Wrote Terraform configurations to spin up a VPC, public/private subnets, an Auto-Scaling Group, and a Load Balancer, effectively treating infrastructure as version-controlled software.
+    *   *Why it matters*: Proves you manage infrastructure **programmatically and reproducibly**.
+10. **Network Traffic Analyzer (Networking)**:
+    *   *Concept*: Developed a Python script using `tcpdump` and `scapy` to analyze packet captures, identifying sudden bandwidth spikes or unusual TCP retransmission rates.
+    *   *Why it matters*: Shows you aren't afraid of the **network layer** and can debug issues below the application stack.
 
 ---
 
@@ -57,16 +75,28 @@ When they ask about scalability, use these specific technical hooks:
 ## ❓ Deep-Dive Questions & Answers (Expanded)
 
 ### Q1: "Why Google Warsaw?"
-**The Strategy**: Connect the specific office culture with your goals.
-*   *"Warsaw is a massive hub for Google's Cloud Technical Infrastructure. I want to be surrounded by the 'engineers' engineers' who are building and maintaining the massive, massively distributed systems that power the internet. The focus on deep technical problems and a blameless postmortem culture is exactly where I thrive."*
+**Choose the strategy that best fits the flow of the conversation:**
+1.  **The Cloud Hub Strategy**: *"Warsaw is a massive hub for Google's Cloud Technical Infrastructure. I want to be surrounded by the 'engineers' engineers' who are building and maintaining the massive, massively distributed systems that power the internet."*
+2.  **The Global Scale Strategy**: *"Warsaw teams manage infrastructure that impacts billions of users. The challenge of keeping European and global systems synchronized and highly available is incredibly appealing to me."*
+3.  **The Talent Density Strategy**: *"I want to work with the absolute best. Warsaw is known for its high technical bar, and I want to be in an environment that constantly pushes my limits in systems engineering."*
+4.  **The Systems Focus Strategy**: *"The Warsaw office has a reputation for focusing on the hardest, lowest-level infrastructure problems, rather than just product development, which perfectly aligns with my passion for OS internals and networking."*
+5.  **The Research to Production Strategy**: *"Google Warsaw is famous for turning theoretical distributed systems research into production reality, mapping exactly to my background transitioning Horizon Europe research into scalable applications."*
 
 ### Q2: "What is your favorite Google product and why?"
-**The Strategy**: Go deeper into the infrastructure.
-*   **Example**: *Borg / Kubernetes*. *"I admire the architectural foresight of Borg (and subsequently Kubernetes). As an engineer, I’m fascinated by how it manages scheduling, resource allocation, and self-healing across thousands of machines. It fundamentally changed how we think about deploying software and abstracts away hardware failures brilliantly."*
+**Choose a product that highlights infrastructure depth:**
+1.  **Borg / Kubernetes**: *"I admire the architectural foresight of Borg. As an engineer, I’m fascinated by how it manages scheduling, resource allocation, and self-healing across thousands of machines, abstracting away hardware failures brilliantly."*
+2.  **Cloud Spanner**: *"The way Spanner provides global consistency while maintaining horizontal scalability using TrueTime APIs is a masterclass in distributed consensus. It solves the CAP theorem trade-offs brilliantly."*
+3.  **Bigtable**: *"It pioneered how we think about NoSQL column-family stores. Managing petabytes with high throughput and low latency is the foundation of scalable SRE thinking."*
+4.  **Colossus (Google File System)**: *"It fascinates me how Google handles disk failures as a normal, expected occurrence, abstracting the unreliability of cheap commodity hardware into a highly reliable storage layer."*
+5.  **Google VPC/Jupiter Network**: *"The software-defined networking approach is incredible. The fact that Google built its own custom data-center network switches to achieve massive bisection bandwidth is pure engineering excellence."*
 
 ### Q3: "Why SRE specifically?"
-**The Strategy**: Position yourself as passionate about reliability.
-*   *"Most engineers want to push new features, but I find my greatest satisfaction in making systems bulletproof. I love the detective work of debugging complex latency spikes across the network stack, and the satisfaction of writing automation that eliminates a recurring problem forever. I want to build systems that don't just work, but work reliably at massive scale."*
+**Choose the angle that best fits your personality:**
+1.  **The Bulletproof Systems Strategy**: *"Most engineers want to push new features, but I find my greatest satisfaction in making systems bulletproof. I love the detective work of debugging complex latency spikes across the network stack."*
+2.  **The Automation Obsession Strategy**: *"I despise doing the same manual task twice. SRE empowers me to treat operational toil as an engineering problem that can be permanently eliminated with code."*
+3.  **The Crisis Management Strategy**: *"I actually enjoy the pressure of incident response. There's a unique satisfaction in methodically triaging a critical failure and restoring service under high pressure."*
+4.  **The Cross-Functional Strategy**: *"SREs get to see the entire stack. Instead of being siloed in one microservice, SREs understand how the network, the OS, the database, and the application all interact."*
+5.  **The Advocate for the User Strategy**: *"At the end of the day, reliability is the most important feature. If a system is down, the best UI/UX doesn't matter. I want to be the guardian of that reliability."*
 
 ---
 
