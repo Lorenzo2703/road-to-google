@@ -7,17 +7,17 @@
 
 ## Slide 1: Profile Summary
 
-### [Your Name] — Software Engineer
+### Lorenzo Giarè — Software Engineer
 
-**Headline**: Software Engineer with hands-on experience in distributed systems, infrastructure automation, and high-availability applications.
+**Headline**: Software Engineer with 5+ years of hands-on experience in distributed systems, infrastructure automation, and high-availability applications.
 
 **Key Facts**:
-- 🎓 [Your Degree] in [Your Field] from [Your University]
-- 💼 [X] years of professional software engineering experience
-- 🐍 Primary languages: Python, Go, Java, C++
-- 🐧 Deep expertise in Linux systems and networking
-- ☁️ Extensive experience with cloud platforms (GCP/AWS/Azure)
-- 📊 Track record of improving system reliability and observability
+- 🎓 Master's degree in Computer Science from Sapienza University
+- 💼 5+ years of professional software engineering experience
+- 🐍 Primary languages: Python, Java, JavaScript, TypeScript
+- 🐧 Deep expertise in Linux systems, Docker, and Kubernetes
+- ☁️ Extensive experience with cloud platforms (AWS)
+- 📊 Track record of building massively scalable registries and optimizing edge computing
 
 > **Customize**: Replace brackets with your real information. Keep it concise — this is the 30-second elevator pitch.
 
@@ -38,14 +38,14 @@ This role asks for someone who can:
 
 | Role Requirement | My Background |
 |-----------------|---------------|
-| Massively distributed systems | [Your experience building/scaling systems] |
-| Reliability and uptime | [Your experience with on-call, postmortems, or improving SLAs] |
-| Debugging complex issues | [Examples of deep-dive debugging across the stack] |
-| Performance optimization | [Quantified improvements in latency, throughput, or capacity] |
-| Infrastructure automation | [Your experience with Terraform, Kubernetes, CI/CD] |
+| Massively distributed systems | FNOMCeO national registry supporting 460,000+ users |
+| Reliability and uptime | High-availability data pipelines for the European ARIEN project |
+| Debugging complex issues | Optimizing edge inference models to a strict 257KB memory footprint using TFLite |
+| Performance optimization | Achieving 96% gesture recognition accuracy on highly constrained edge devices |
+| Infrastructure automation | Dockerizing microservices and orchestrating deployments on Kubernetes |
 
 ### My Unique Angle
-> "I bring a combination of [your unique skill combination] that directly maps to building and maintaining Google-scale infrastructure. I understand both the software engineering side (writing robust code) and the systems engineering side (how the OS and network actually behave under load)."
+> "I bring a combination of full-stack software engineering, scalable cloud architecture, and rigorous academic AI research that directly maps to building and maintaining Google-scale infrastructure. I understand both the software engineering side (writing robust code) and the systems engineering side (how the OS and network actually behave under load)."
 
 ---
 
@@ -53,24 +53,24 @@ This role asks for someone who can:
 
 ### Professional Experience
 
-**Role 1: [Most Relevant Job Title]** — [Company], [Date Range]
-- [Achievement that maps to reliability/uptime]
-- [Achievement that maps to scaling or distributed systems]
-- [Achievement that maps to infrastructure automation]
-- **Impact**: [Quantified result — improved SLA from X to Y, reduced toil by Z hours, supported N concurrent users]
+**Role 1: Software Engineer** — ENGINEERING, 03/2021 - Present
+- Developed highly available data ingestion pipelines for the ARIEN project.
+- Engineered Python-based evaluation frameworks to benchmark security prototypes.
+- Automated system evaluation and deployment pipelines to reduce toil.
+- **Impact**: Processed complex financial flows and illicit activities in real-time, directly supporting European security initiatives.
 
-**Role 2: [Second Most Relevant]** — [Company], [Date Range]
-- [Key achievement 1]
-- [Key achievement 2]
-- **Impact**: [Quantified result]
+**Role 2: Software Engineer** — FNOMCeO, 04/2022 - 07/2022
+- Spearheaded functional design and cloud architecture planning.
+- Designed advanced reporting structures to avoid transactional bottlenecks.
+- **Impact**: Reliably supported ~460,000 users and provided strategic technical guidance for modernization.
 
 ### Key Projects
 
-**Project: [SRE-Related Project Name]**
-- **What**: [1-sentence description]
-- **Tech Stack**: Go/Python, Linux, [cloud services], [observability tools]
-- **Impact**: [What it achieved or demonstrated]
-- **Relevance to Role**: [Direct connection to SRE principles]
+**Project: Edge Inference & Smartwatch Resource Optimization**
+- **What**: Deep Learning gesture recognition optimized for extreme edge device constraints.
+- **Tech Stack**: Python, TensorFlow Lite, Signal Processing, Java
+- **Impact**: Achieved 96% accuracy while reducing memory footprint to 257.6 KB.
+- **Relevance to Role**: Demonstrates deep understanding of performance limitations, capacity planning, and hardware optimization.
 
 > **Tip**: Order experiences by relevance to the role, not by date. The most relevant experience should come first, even if it was a side project.
 
@@ -82,12 +82,12 @@ This role asks for someone who can:
 
 | Category | Skills | Proficiency | Relevance to Role |
 |----------|--------|-------------|-------------------|
-| **Languages** | Python, Go, Java | ⭐⭐⭐⭐⭐ | Core — Building robust tooling and services |
+| **Languages** | Python, Java, JavaScript, TypeScript | ⭐⭐⭐⭐⭐ | Core — Building robust tooling and services |
 | **OS / Systems** | Linux internals, Bash, File systems | ⭐⭐⭐⭐ | Critical — Deep debugging and performance tuning |
-| **Networking** | TCP/IP, BGP, DNS, HTTP/2 | ⭐⭐⭐⭐ | Direct — Troubleshooting distributed communication |
-| **Observability** | Prometheus, Grafana, OpenTelemetry | ⭐⭐⭐⭐ | Key — Monitoring SLIs and SLAs |
-| **Cloud / Infra** | GCP/AWS, Kubernetes, Terraform | ⭐⭐⭐ | Important — Infrastructure as Code and deployment |
-| **System Design** | Distributed consensus, caching, sharding | ⭐⭐⭐⭐ | Core — Designing scalable architectures |
+| **Networking** | TCP/IP, API Gateways, CDN | ⭐⭐⭐⭐ | Direct — Troubleshooting distributed communication |
+| **Observability** | Streamlit (Dashboards), Data Pipelines | ⭐⭐⭐⭐ | Key — Monitoring SLIs and SLAs |
+| **Cloud / Infra** | AWS, Docker, Kubernetes | ⭐⭐⭐⭐ | Important — Infrastructure as Code and deployment |
+| **System Design** | High-availability architecture, caching, decoupling | ⭐⭐⭐⭐ | Core — Designing scalable architectures |
 
 ### Technical Depth: The SRE Stack
 
@@ -111,31 +111,31 @@ This role asks for someone who can:
 └─────────────────────────────────────────────────┘
 ```
 
-> I have experience debugging across [which layers], with deepest expertise in [which layer].
+> I have experience debugging across application, middleware, and infrastructure layers, with deepest expertise in application and infrastructure layers.
 
 ---
 
 ## Slide 5: Projects Aligned with Cloud SRE
 
-### Project 1: [High-Availability Architecture Project]
-- **Description**: [What it does — e.g., "A highly available microservices architecture supporting 10k RPS with 99.99% uptime"]
-- **Architecture**: [Brief — e.g., "Multi-region active-active setup with Cloud Spanner and GKE"]
-- **Technologies**: Go, Kubernetes, Terraform, GCP
+### Project 1: FNOMCeO National Registry Architecture
+- **Description**: A highly available national registry designed to support 460,000+ active medical professionals.
+- **Architecture**: Decoupled microservices architecture with a CDN-backed load balancer, API Gateway, and read-replicas for reporting.
+- **Technologies**: Java, Spring Boot, Python, PostgreSQL, Redis, Cloud Load Balancers
 - **Key Challenges Solved**:
-  - [Challenge 1 — e.g., "Handling network partitions gracefully"]
-  - [Challenge 2 — e.g., "Implementing backpressure and circuit breakers"]
+  - Avoiding transactional bottlenecks during massive data aggregation
+  - Ensuring performance, consistency, and fault-tolerance at a national scale
 - **Relevance**: Directly demonstrates ability to design for failure
 
-### Project 2: [Observability / Automation Tooling]
-- **Description**: [What it does — e.g., "Automated incident response tooling that correlates metrics with recent deployments"]
-- **Contributions**: [Specific — e.g., "Reduced MTTR by 40% by automatically pulling relevant logs into the incident channel"]
-- **Technologies**: Python, Prometheus, Slack API
-- **Relevance**: Shows understanding of toil reduction and incident management
+### Project 2: ARIEN Horizon Europe Data Ingestion
+- **Description**: High-throughput, reliable data ingestion pipeline to track complex financial flows and illicit activities.
+- **Contributions**: Separated data ingestion (Kafka) from AI processing to ensure sensitive data streams do not drop.
+- **Technologies**: Python, Kafka, Java, Angular
+- **Relevance**: Shows understanding of decoupling and maintaining reliable messaging queues
 
-### Project 3: [Performance Optimization Deep-Dive]
-- **Description**: [e.g., "Kernel-level tuning to reduce tail latency in a high-frequency trading application"]
-- **Technologies**: C++, Linux (strace, perf), TCP tuning
-- **Relevance**: Demonstrates the deep systems knowledge expected of Google SREs
+### Project 3: Edge Inference Resource Optimization
+- **Description**: Quantizing a 1D-CNN model to run on strict constraints (257.6 KB memory limit) directly on a smartwatch.
+- **Technologies**: Python, TensorFlow Lite, Signal Processing
+- **Relevance**: Demonstrates the deep systems knowledge expected of Google SREs (understanding CPU/Memory physical limits)
 
 ---
 
