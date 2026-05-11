@@ -34,9 +34,14 @@ I have consistently balanced high-level professional responsibilities with acade
 ## 🛠️ Key Technical Achievements & Project Deep Dives
 
 ### 1. FNOMCeO National Registry (Cloud Architecture & High Availability)
-**The Project:** Spearheaded the functional design and cloud architecture planning for the National Federation of the Orders of Surgeons and Dentists (FNOMCeO), building a modern, highly available national institution registry capable of supporting over **460,000 users**.
+**What the project is about:**
+The complete modernization and cloud architecture planning for the National Federation of the Orders of Surgeons and Dentists (FNOMCeO). The goal was to replace legacy infrastructure with a modern, highly available national institution registry capable of reliably supporting over **460,000 active users**.
 
-**SRE Relevance:** Demonstrates ability to design, analyze, and troubleshoot large-scale distributed systems. Conducted comprehensive "as-is" architecture assessments and designed the target "to-be" cloud architecture to ensure performance, consistency, and fault-tolerance at a national scale. Designed advanced reporting structures and data pipelines that aggregated massive data without impacting the primary transactional database's performance.
+**Tech Stack:**
+Java, Spring Boot, Python, Distributed Caching (Redis), Relational Databases (PostgreSQL), API Gateways, Cloud Load Balancers, CDN.
+
+**Architecture:**
+The architecture relies on a highly available cloud environment decoupling the core registry services from the reporting and analytics services to avoid transactional bottlenecks. It leverages read-replicas for data aggregation and a CDN-backed load balancer to distribute massive user traffic safely across the gateway.
 
 ```mermaid
 flowchart TD
@@ -57,14 +62,19 @@ flowchart TD
         ReadReplica <--> ReportService
     end
     
-    classDef cloud fill:#e3f2fd,stroke:#1565c0,stroke-width:2px;
+    classDef cloud fill:#808080,stroke:#404040,stroke-width:2px;
     class CloudEnv cloud;
 ```
 
 ### 2. ARIEN Horizon Europe Project (Data Ingestion & AI Visualization)
-**The Project:** ARtificial IntelligencE in fighting illicit drugs production and traffickiNg (ARIEN), a major European security initiative bridging cutting-edge AI research with production-ready applications.
+**What the project is about:**
+ARtificial IntelligencE in fighting illicit drugs production and traffickiNg (ARIEN) is a major European security initiative. The project focuses on taking cutting-edge AI research and building a production-ready application to visualize and track illicit drug trafficking chains and complex financial flows.
 
-**SRE Relevance:** Developed highly available data ingestion pipelines to process and track complex financial flows and illicit drug trafficking chains in real-time. Engineered a responsive Angular frontend to visualize AI-driven security insights. Showcases the ability to handle ambiguous, complex requirements and translate them into secure, full-stack applications with sensitive data pipelines.
+**Tech Stack:**
+Python, Kafka / Message Queues, Java, Spring, Node.js, Angular, NoSQL/SQL Databases.
+
+**Architecture:**
+The system is divided into three asynchronous layers to handle sensitive, high-throughput security data. A data ingestion pipeline streams raw financial data through a message queue (Kafka) into the Python AI analytics engine. The processed insights are securely stored and exposed via a robust Backend API to an interactive Angular dashboard for European Security Analysts.
 
 ```mermaid
 flowchart LR
@@ -86,9 +96,14 @@ flowchart LR
 ```
 
 ### 3. Edge Inference & Smartwatch Gesture Recognition (Resource Optimization)
-**The Project:** Thesis and publication on "Smartwatch Gesture Recognition for Enhancing Personal Security" combined with work on the SmartSense project.
+**What the project is about:**
+A research project and publication focusing on enhancing personal security through wearables (SmartSense). It involved developing a Deep Learning model that recognizes emergency gestures (like a "double fist clench") in real-time directly on a smartwatch, without needing a cloud connection.
 
-**SRE Relevance:** Highlights deep understanding of performance limitations, capacity planning, and hardware optimization. Developed a multi-head 1D-CNN Deep Learning model for real-time classification of inertial data. Optimized the model using TensorFlow Lite, stripping its memory footprint down to 257.6 KB while maintaining 96% accuracy. Built a robust signal pre-processing pipeline to minimize false positives, demonstrating rigorous capability to debug and optimize code.
+**Tech Stack:**
+Python, TensorFlow Lite, Deep Learning (1D-CNN), Java, Signal Processing (Filtering, Normalization).
+
+**Architecture:**
+An ultra-constrained, on-device computing pipeline. Raw accelerometer and gyroscope data pass through a rigorous pre-processing filter. The cleaned signal is fed into a highly quantized TensorFlow Lite 1D-CNN model optimized to consume only 257.6 KB of memory. The classifier then dictates whether to trigger an SOS or sleep to preserve battery.
 
 ```mermaid
 flowchart TD
@@ -108,5 +123,15 @@ flowchart TD
 ```
 
 ### 4. PREVENT-PCP & NTTDATA (Infrastructure, Benchmarking, & Automation)
-*   **PREVENT-PCP:** Engineered a Python-based evaluation framework to benchmark complex security systems, visualizing KPIs through a Streamlit dashboard. Demonstrates analytical rigor and the ability to measure system health logically.
-*   **NTTDATA (Zarathustra Integration):** Integrated enterprise software into existing ecosystems using Spring and JavaEE. Architected secure RESTful APIs with JWT authentication and engineered a CV scraping automation tool, showcasing capabilities in automating routine tasks and managing secure integrations.
+**What the projects are about:**
+*PREVENT-PCP* involved creating an evaluation framework to benchmark innovative security prototypes for European public transport. *NTTDATA (Zarathustra)* involved integrating enterprise software into existing ecosystems and automating resume scraping workflows.
+
+**Tech Stack:**
+Python, Streamlit, JavaEE, Spring, RESTful APIs, JWT, Data Scraping tools.
+
+**Architecture:**
+*   **PREVENT-PCP:** A data-driven Python backend parsing benchmarking metrics, piped directly into a highly interactive Streamlit dashboard for real-time KPI visualization and comparison.
+*   **NTTDATA:** A secure API layer using JWT tokens to integrate isolated enterprise systems securely, coupled with a background automation daemon for CV scraping.
+
+**Why they are important for the CV:**
+These projects showcase essential SRE traits: **automation** and **measurability**. The PREVENT-PCP framework demonstrates your analytical rigor to measure system health and performance logically. The NTTDATA project proves your capability to automate routine, manual tasks (CV scraping) and manage secure enterprise integrations cleanly.
