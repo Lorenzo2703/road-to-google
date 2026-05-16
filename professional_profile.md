@@ -45,7 +45,7 @@ The architecture relies on a highly available cloud environment decoupling the c
 
 ```mermaid
 flowchart TD
-    User(["460k+ Users / Medical Professionals"]) --> CDN["CDN / WAF"]
+    User(["460k+ Users / Medical Professionals"]) --> CDN["CDN"]
     CDN --> LB["Cloud Load Balancer"]
     
     subgraph CloudEnv [Highly Available Cloud Environment]
@@ -118,20 +118,19 @@ flowchart TD
     Classifier -- "Double Fist Clench" --> Action["Trigger SOS / Emergency Protocol"]
     Classifier -- "Normal Movement" --> Ignore["Discard / Sleep to Save Power"]
     
-    classDef edge fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
+    classDef edge fill:#878787,stroke:#878787,stroke-width:2px;
     class Edge_Sub edge;
 ```
 
-### 4. PREVENT-PCP & NTTDATA (Infrastructure, Benchmarking, & Automation)
+### 4. PREVENT-PCP (Infrastructure, Benchmarking, & Automation)
 **What the projects are about:**
-*PREVENT-PCP* involved creating an evaluation framework to benchmark innovative security prototypes for European public transport. *NTTDATA (Zarathustra)* involved integrating enterprise software into existing ecosystems and automating resume scraping workflows.
+*PREVENT-PCP* involved creating an evaluation framework to benchmark innovative security prototypes for European public transport.
 
 **Tech Stack:**
 Python, Streamlit, JavaEE, Spring, RESTful APIs, JWT, Data Scraping tools.
 
 **Architecture:**
-*   **PREVENT-PCP:** A data-driven Python backend parsing benchmarking metrics, piped directly into a highly interactive Streamlit dashboard for real-time KPI visualization and comparison.
-*   **NTTDATA:** A secure API layer using JWT tokens to integrate isolated enterprise systems securely, coupled with a background automation daemon for CV scraping.
+A data-driven Python backend parsing benchmarking metrics, piped directly into a highly interactive Streamlit dashboard for real-time KPI visualization and comparison.
 
 **Why they are important for the CV:**
-These projects showcase essential SRE traits: **automation** and **measurability**. The PREVENT-PCP framework demonstrates your analytical rigor to measure system health and performance logically. The NTTDATA project proves your capability to automate routine, manual tasks (CV scraping) and manage secure enterprise integrations cleanly.
+These projects showcase essential SRE traits: **automation** and **measurability**. The PREVENT-PCP framework demonstrates your analytical rigor to measure system health and performance logically. 

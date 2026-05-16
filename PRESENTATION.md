@@ -93,21 +93,21 @@ This role asks for someone who can:
 
 ```
 ┌─────────────────────────────────────────────────┐
-│                   Application Layer              │
-│         Microservices, APIs, User Traffic        │
-│                (Latency, Error Rates)            │
+│                   Application Layer             │
+│         Microservices, APIs, User Traffic       │
+│                (Latency, Error Rates)           │
 ├─────────────────────────────────────────────────┤
-│                  Middleware Layer                │
-│       Load Balancers, Caches, Message Queues     │
-│                 (Throughput, Saturation)         │
+│                  Middleware Layer               │
+│       Load Balancers, Caches, Message Queues    │
+│                 (Throughput, Saturation)        │
 ├─────────────────────────────────────────────────┤
-│               Infrastructure Layer               │
-│         Kubernetes, Virtual Machines, OS         │
-│                 (CPU, Memory, I/O)               │
+│               Infrastructure Layer              │
+│         Kubernetes, Virtual Machines, OS        │
+│                 (CPU, Memory, I/O)              │
 ├─────────────────────────────────────────────────┤
-│                    Network Layer                 │
-│                 TCP/IP, BGP, DNS                 │
-│              (Packet Loss, RTT, Jitter)          │
+│                    Network Layer                │
+│                 TCP/IP, BGP, DNS                │
+│              (Packet Loss, RTT, Jitter)         │
 └─────────────────────────────────────────────────┘
 ```
 

@@ -2,7 +2,7 @@
 
 > A comprehensive, structured preparation plan to maximize chances of landing a **Site Reliability Engineering** role at **Google Warsaw**.
 
-[![Google](https://img.shields.io/badge/Google-Cloud%20SRE-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://www.google.com/about/careers/applications/u/2/jobs/results/138294370250957510-software-engineer-google-cloud-site-reliability-engineering)
+![Google](https://img.shields.io/badge/Google-Cloud%20SRE-4285F4?style=for-the-badge&logo=google&logoColor=white)
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](#)
 [![LeetCode](https://img.shields.io/badge/LeetCode-Practice-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](#)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](#license)

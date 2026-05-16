@@ -58,10 +58,10 @@ Engineering a system means engineering its visibility.
 
 ## 🚀 SRE Engineering Checklist
 
-- [ ] Can you implement a **Token Bucket** rate limiter from scratch?
-- [ ] Do you know how to write a **Thread-Safe** producer-consumer queue?
-- [ ] Can you explain the difference between **TCP and UDP** for various system types?
-- [ ] Do you understand **Database Sharding** and how to handle cross-shard transactions?
-- [ ] Can you design an **Auto-scaling** algorithm based on custom metrics?
-- [ ] Do you know how to use **Protobuf** for efficient cross-service communication?
-- [ ] Are you comfortable with **Linux Debugging Tools** like `strace`, `lsof`, `tcpdump`, and `perf`?
+- [x] Can you implement a **Token Bucket** rate limiter from scratch?
+- [x] Do you know how to write a **Thread-Safe** producer-consumer queue?
+- [x] Can you explain the difference between **TCP and UDP** for various system types?
+- [x] Do you understand **Database Sharding** and how to handle cross-shard transactions?
+- [x] Can you design an **Auto-scaling** algorithm based on custom metrics?
+- [x] Do you know how to use **Protobuf** for efficient cross-service communication?
+- [x] Are you comfortable with **Linux Debugging Tools** like `strace`, `lsof`, `tcpdump`, and `perf`?
