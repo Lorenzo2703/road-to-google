@@ -70,3 +70,52 @@
 | 843 | [Guess the Word](https://www.google.com/search?q=https://neetcode.io/solutions/guess-the-word) | Hard | Minimax | Eliminating candidates algorithmically |
 | 2034 | [Stock Price Fluctuation](https://www.google.com/search?q=https://neetcode.io/solutions/stock-price-fluctuation) | Medium | Design | HashMap paired with Heaps/TreeMaps |
 | 2104 | [Sum of Subarray Ranges](https://www.google.com/search?q=https://neetcode.io/solutions/sum-of-subarray-ranges) | Medium | Stack | Monotonic stack for range counting |
+
+---
+
+# 🏷️ Google-Tagged LeetCode Problems — SRE Focus
+
+> Problems most frequently asked at Google interviews, with an emphasis on SRE-relevant topics.
+
+---
+
+## Tier 1: Critical for SRE (Systems & Data Structure Design)
+
+| # | Problem | Difficulty | Topic | Why for SRE? |
+| --- | --- | --- | --- | --- |
+| 146 | [LRU Cache](https://neetcode.io/problems/lru-cache) | Medium | Design | Managing memory & caches efficiently. |
+| 56 | [Merge Intervals](https://neetcode.io/problems/merge-intervals) | Medium | Sorting | Resource scheduling and availability. |
+| 207 | [Course Schedule](https://neetcode.io/problems/course-schedule) | Medium | Graph | Dependency resolution in distributed systems. |
+| 210 | [Course Schedule II](https://neetcode.io/problems/course-schedule-ii) | Medium | Graph | Full topological sort for system startup. |
+| 743 | [Network Delay Time](https://neetcode.io/problems/network-delay-time) | Medium | Graph | Calculating latency in a service mesh. |
+| 295 | [Find Median from Data Stream](https://www.google.com/search?q=https://neetcode.io/problems/find-median-from-data-stream) | Hard | Heap | Real-time monitoring and P99 calculation. |
+| 394 | [Decode String](https://neetcode.io/problems/decode-string) | Medium | Stack | Log parsing and configuration expansion. |
+
+---
+
+## Tier 2: Core Algorithm Fundamentals
+
+| # | Problem | Difficulty | Topic | Link |
+| --- | --- | --- | --- | --- |
+| 1 | Two Sum | Easy | HashMap | [NeetCode Practice](https://neetcode.io/problems/two-integer-sum) |
+| 42 | Trapping Rain Water | Hard | Two Pointers | [NeetCode Practice](https://neetcode.io/problems/trapping-rain-water) |
+| 200 | Number of Islands | Medium | Graph / BFS / DFS | [NeetCode Practice](https://neetcode.io/problems/count-number-of-islands) |
+| 322 | Coin Change | Medium | DP | [NeetCode Practice](https://neetcode.io/problems/coin-change) |
+| 560 | Subarray Sum Equals K | Medium | Prefix Sum | [NeetCode Practice](https://www.google.com/search?q=https://neetcode.io/problems/subarray-sum-equals-k) |
+| 3 | Longest Substring | Medium | Sliding Window | [NeetCode Practice](https://www.google.com/search?q=https://neetcode.io/problems/longest-substring-without-repeating-characters) |
+| 20 | Valid Parentheses | Easy | Stack | [NeetCode Practice](https://neetcode.io/problems/validate-parentheses) |
+| 33 | Search in Rotated Sorted Array | Medium | Binary Search | [NeetCode Practice](https://www.google.com/search?q=https://neetcode.io/problems/search-in-rotated-sorted-array) |
+| 347 | Top K Frequent Elements | Medium | Heap | [NeetCode Practice](https://neetcode.io/problems/top-k-elements-in-list) |
+
+---
+
+## Tier 3: Important Systems Simulation
+
+| # | Problem | Difficulty | Topic | Link |
+| --- | --- | --- | --- | --- |
+| 621 | Task Scheduler | Medium | CPU Scheduling | [NeetCode Practice](https://neetcode.io/problems/task-scheduling) |
+| 460 | LFU Cache | Hard | Advanced Cache | *(Not hosted on NeetCode)* |
+| 84 | Largest Rectangle in Histogram | Hard | Stack | [NeetCode Practice](https://neetcode.io/problems/largest-rectangle-in-histogram) |
+| 127 | Word Ladder | Hard | BFS | [NeetCode Practice](https://neetcode.io/problems/word-ladder) |
+| 1514 | Path with Max Probability | Medium | Network Reliability | *(Not hosted on NeetCode)* |
+| 297 | Serialize/Deserialize Tree | Hard | Data Serialization | [NeetCode Practice]() |
