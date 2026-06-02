@@ -32,11 +32,11 @@
 | 46   | [x] [Permutations](https://neetcode.io/problems/permutations)                                                                                             | Medium     | Backtracking     | State space tree generation           |
 | 76   | [x] [Minimum Window Substring](https://neetcode.io/problems/minimum-window-substring)                                                                     | Hard       | Sliding Window   | Two-pointer frequency map             |
 | 127  | [x] [Word Ladder](https://neetcode.io/problems/word-ladder)                                                                                               | Hard       | BFS              | Shortest path on unweighted graph     |
-| 207  | [ ] [Course Schedule](https://neetcode.io/problems/course-schedule)                                                                                       | Medium     | Topological Sort | Cycle detection (DFS/Kahn's)          |
+| 207  | [x] [Course Schedule](https://neetcode.io/problems/course-schedule)                                                                                       | Medium     | Topological Sort | Cycle detection (DFS/Kahn's)          |
 | 210  | [ ] [Course Schedule II](https://neetcode.io/problems/course-schedule-ii)                                                                                 | Medium     | Topological Sort | Linear dependency ordering            |
-| 238  | [ ] [Product of Array Except Self](https://neetcode.io/problems/product-of-array-except-self)                                                             | Medium     | Arrays           | Prefix & Suffix running products      |
+| 238  | [x] [Product of Array Except Self](https://neetcode.io/problems/product-of-array-except-self)                                                             | Medium     | Arrays           | Prefix & Suffix running products      |
 | 297  | [ ] [Serialize/Deserialize Binary Tree](https://neetcode.io/problems/serialize-and-deserialize-binary-tree)                                               | Hard       | Tree             | Structural serialization APIs         |
-| 347  | [ ] [Top K Frequent Elements](https://neetcode.io/problems/top-k-frequent-elements)                                                                       | Medium     | Heap             | Bucket sort or Min-Heap tracking      |
+| 347  | [x] [Top K Frequent Elements](https://neetcode.io/problems/top-k-frequent-elements)                                                                       | Medium     | Heap             | Bucket sort or Min-Heap tracking      |
 | 399  | [ ] [Evaluate Division](https://neetcode.io/problems/evaluate-division)                                                                                   | Medium     | Graph            | Equations modeled as graphs (DFS/BFS) |
 | 438  | [ ] [Find All Anagrams in String](https://neetcode.io/problems/find-all-anagrams-in-string)                                                               | Medium     | Sliding Window   | Fixed-size window mapping             |
 | 1146 | [ ] [Snapshot Array](https://neetcode.io/problems/snapshot-array)                                                                                         | Medium     | Design           | Binary search over versioned history  |
@@ -47,7 +47,7 @@
 
 | #    | Problem                                                                                                         | Difficulty | Topic            | Key Skill                                    |
 | ---- | --------------------------------------------------------------------------------------------------------------- | ---------- | ---------------- | -------------------------------------------- |
-| 11   | [ ] [Container With Most Water](https://neetcode.io/problems/container-with-most-water)                         | Medium     | Two Pointers     | Inside-out boundary narrowing                |
+| 11   | [x] [Container With Most Water](https://neetcode.io/problems/container-with-most-water)                         | Medium     | Two Pointers     | Inside-out boundary narrowing                |
 | 17   | [ ] [Letter Combinations of a Phone Number](https://neetcode.io/problems/letter-combinations-of-a-phone-number) | Medium     | Backtracking     | Combinatorial mapping recursion              |
 | 22   | [ ] [Generate Parentheses](https://neetcode.io/problems/generate-parentheses)                                   | Medium     | Backtracking     | Valid state filtering constraints            |
 | 39   | [ ] [Combination Sum](https://neetcode.io/problems/combination-sum)                                             | Medium     | Backtracking     | Deduplication via index tracking             |
