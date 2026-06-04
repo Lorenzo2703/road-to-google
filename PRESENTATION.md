@@ -1,4 +1,4 @@
-# 🎤 Interview Presentation — Google SWE II, Agent Development
+# 🎤 Interview Presentation — Google Site Reliability Engineer (SRE)
 
 > A structured presentation framework for positioning yourself as a strong candidate.
 > Customize each section with your real experience and projects.
@@ -7,16 +7,16 @@
 
 ## Slide 1: Profile Summary
 
-### [Your Name] — Software Engineer
+### [Your Name] — Software Engineer / SRE
 
-**Headline**: Software Engineer with hands-on experience in AI agent development, open-source tooling, and cloud-native applications.
+**Headline**: Software Engineer with hands-on experience scaling distributed backends, systems programming, and building robust, resilient cloud-native applications.
 
 **Key Facts**:
 - 🎓 [Your Degree] in [Your Field] from [Your University]
 - 💼 [X] years of professional software engineering experience
-- 🐍 Primary languages: Python, [other languages]
-- 🤖 Active in AI/LLM agent development
-- 🌐 Open-source contributor and community participant
+- 🐍 Primary languages: Python, Go, Java
+- 🛡️ Focused on reliability, fault tolerance, and systems internals
+- 🌐 Open-source contributor and automation builder
 - ☁️ Experience with cloud platforms (GCP/AWS/Azure)
 
 > **Customize**: Replace brackets with your real information. Keep it concise — this is the 30-second elevator pitch.
@@ -25,26 +25,26 @@
 
 ## Slide 2: Why This Google Role Fits Me
 
-### The Role: SWE II, Agent Development
+### The Role: Site Reliability Engineer (SRE)
 
 This role asks for someone who can:
-1. **Build open-source SDKs** for the Agent Development Kit (ADK)
-2. **Create developer tooling** for the agent lifecycle
-3. **Collaborate** with internal and external developers
-4. **Deploy agents** on Google Cloud Platform
+1. **Improve system reliability and availability** for Google services
+2. **Automate operational work (toil)** by writing software pipelines and systems
+3. **Troubleshoot complex systems outages** under pressure (kernel, network, storage)
+4. **Design robust observability** and telemetry monitoring systems
 
 ### Why It's a Perfect Match
 
 | Role Requirement | My Background |
 |-----------------|---------------|
-| Open-source SDK development | [Your experience building/contributing to SDKs or open-source] |
-| Agent development lifecycle tooling | [Your experience with testing, debugging, deployment tools] |
+| Software development & automation | [Your experience building high-quality backend software and scripts] |
+| Distributed systems debugging | [Your experience identifying memory leaks, network socket errors, kernel bottlenecks] |
 | Cross-functional collaboration | [Examples of working with different teams/stakeholders] |
-| Cloud deployment (GCP) | [Your cloud experience — even if AWS/Azure, it shows transferable skills] |
-| AI/ML/LLM experience | [Your AI projects, courses, or professional experience] |
+| Cloud deployment (GCP) | [Your cloud experience — GKE, VPCs, VM scaling, and Cloud Run] |
+| Observability & reliability practices | [Your experience with metrics dashboards (Prometheus/Grafana), SLOs, post-mortems] |
 
 ### My Unique Angle
-> "I bring a combination of [your unique skill combination] that directly maps to building production-grade AI agent tooling. I understand both the developer experience side (how to make tools intuitive) and the infrastructure side (how to make them scalable and reliable)."
+> "I bring a combination of backend software engineering, systems programming, and infrastructure management that directly maps to Google SRE. I understand both the systems engineering side (kernel, networking, OS internals) and the software design side (how to build clean, maintainable automation tools)."
 
 ---
 
@@ -65,11 +65,11 @@ This role asks for someone who can:
 
 ### Key Projects
 
-**Project: [Agent-Related Project Name]**
-- **What**: [1-sentence description]
-- **Tech Stack**: Python, [frameworks used], [cloud services]
-- **Impact**: [What it achieved or demonstrated]
-- **Relevance to Role**: [Direct connection to ADK/agent development]
+**Project: [Systems/Reliability Project Name]**
+- **What**: [1-sentence description — e.g. national registry supporting 460K+ users]
+- **Tech Stack**: Python, Java/Spring, Kubernetes, AWS/GCP, Prometheus
+- **Impact**: [What it achieved — e.g. 99.9% uptime, reduced manual deployment tasks by 60%]
+- **Relevance to Role**: [Direct connection to systems reliability/automation]
 
 > **Tip**: Order experiences by relevance to the role, not by date. The most relevant experience should come first, even if it was a side project.
 
@@ -81,59 +81,56 @@ This role asks for someone who can:
 
 | Category | Skills | Proficiency | Relevance to Role |
 |----------|--------|-------------|-------------------|
-| **Languages** | Python, JavaScript, [others] | ⭐⭐⭐⭐⭐ | Core — ADK is Python-first |
-| **AI/ML** | LLMs, Transformers, Prompt Engineering | ⭐⭐⭐⭐ | Critical — agent development |
-| **Frameworks** | [Agent frameworks you know] | ⭐⭐⭐⭐ | Direct — ADK alternative experience |
-| **Testing** | pytest, unittest, mocking | ⭐⭐⭐⭐ | Key — testing agent workflows |
-| **Cloud** | GCP/AWS, Docker, Kubernetes | ⭐⭐⭐ | Important — deployment |
-| **Open Source** | Git, GitHub, PR reviews | ⭐⭐⭐⭐ | Core — ADK is open-source |
-| **System Design** | Distributed systems, APIs | ⭐⭐⭐ | Important — SDK architecture |
+| **Languages** | Python, Go, C++, Java | ⭐⭐⭐⭐⭐ | Core — Automation & systems coding |
+| **OS & Systems** | Linux Internals, Sockets, Processes, Memory | ⭐⭐⭐⭐ | Critical — debugging & performance tuning |
+| **Infrastructure** | Kubernetes, Docker, Terraform | ⭐⭐⭐⭐ | Direct — managing workloads at scale |
+| **Observability** | Prometheus, OpenTelemetry, Grafana, Jaeger | ⭐⭐⭐⭐ | Key — metrics, alerting, tracing |
+| **Networking** | TCP/IP, HTTP/2, gRPC, DNS, Load Balancers | ⭐⭐⭐⭐ | Core — troubleshooting connections |
+| **System Design** | Distributed systems, Consensus (Raft), Replication | ⭐⭐⭐⭐ | Important — architecture design |
 
-### Technical Depth: Agent Development Stack
+### Technical Depth: SRE & Systems Reliability Stack
 
 ```
 ┌─────────────────────────────────────────────────┐
-│                   Application Layer              │
-│         Agents, Tools, Workflows, UIs            │
+│                Application Layer                │
+│       Microservices, APIs, Business Logic       │
 ├─────────────────────────────────────────────────┤
-│                  Framework Layer                 │
-│     ADK, LangChain, CrewAI, AutoGen              │
+│               Orchestration Layer               │
+│       Kubernetes, Docker, Cloud Run, GKE        │
 ├─────────────────────────────────────────────────┤
-│                   Model Layer                    │
-│     Gemini, GPT, Claude, Local Models            │
+│              Observability Layer                │
+│       Prometheus, OpenTelemetry, Grafana        │
 ├─────────────────────────────────────────────────┤
-│               Infrastructure Layer               │
-│     Cloud Run, GKE, Vertex AI, Pub/Sub           │
+│               Infrastructure Layer              │
+│        Linux OS, Sockets, Compute, Storage      │
 └─────────────────────────────────────────────────┘
 ```
 
-> I have experience across [which layers], with deepest expertise in [which layer].
+> I have experience across all layers, with deepest expertise in the orchestration and infrastructure layers.
 
 ---
 
-## Slide 5: Projects Aligned with Agent Development
+## Slide 5: Projects Aligned with Site Reliability Engineering
 
-### Project 1: [AI Agent Project]
-- **Description**: [What it does — e.g., "A multi-agent system that automates customer support using tool-calling and RAG"]
-- **Architecture**: [Brief — e.g., "ReAct agent with 5 custom tools, PostgreSQL memory, deployed on Cloud Run"]
-- **Technologies**: Python, [agent framework], [LLM provider], [cloud services]
+### Project 1: [National-Scale Registry Reliability (FNOMCeO)]
+- **Description**: Spearheaded reliability improvements for a national registry supporting 460K+ users.
+- **Architecture**: Microservices on Spring Boot / Angular, deployed with high availability configurations, auto-scaling, and health check alerts.
+- **Technologies**: Java, Spring, AWS, Docker, Kubernetes, Prometheus, Grafana
 - **Key Challenges Solved**:
-  - [Challenge 1 — e.g., "Handling non-deterministic LLM outputs in testing"]
-  - [Challenge 2 — e.g., "Managing state across multi-turn conversations"]
-- **GitHub**: [link]
-- **Relevance**: Directly demonstrates ability to build, test, and deploy AI agents
+  - Eliminated high latency during morning peak hours by introducing intelligent database indexing and a Redis caching layer.
+  - Automated deployment rollbacks when new releases failed health checks.
+- **Relevance**: Directly demonstrates the ability to manage reliability and scale for real-world national services.
 
-### Project 2: [Open-Source Contribution / SDK Project]
-- **Description**: [What it does — e.g., "Contributed to an open-source agent framework, adding tool validation and error handling"]
-- **Contributions**: [Specific — e.g., "Added 3 features, fixed 12 bugs, reviewed 20+ PRs"]
-- **Technologies**: Python, Git, CI/CD, [frameworks]
-- **GitHub**: [link]
-- **Relevance**: Shows open-source collaboration skills critical for ADK development
+### Project 2: [SRE Automation / Cleanup Operator]
+- **Description**: Built an automated toil-reduction tool that continuously inspects and cleans up orphaned cloud assets, temporary logs, and idle Docker containers.
+- **Architecture**: A Python-based CLI / Cron operator that connects to GCP/Kubernetes API, checks resource usage, runs diagnostic tests, and performs safe, alert-triggered purges.
+- **Technologies**: Python, Kubernetes API, Docker, GCP, CI/CD
+- **Relevance**: Highlights automation first mindset and coding skills to reduce operational toil.
 
-### Project 3: [Personal AI Bot / Telegram Bot]
-- **Description**: [Based on your conversation history — e.g., "Personal AI Telegram bot with vision, audio, and multi-tool capabilities using Agno framework"]
-- **Technologies**: Python, Agno, Ollama, Telegram API
-- **Relevance**: Demonstrates hands-on experience with agent frameworks and tool integration
+### Project 3: [Distributed Metrics Exporter & Alert Engine]
+- **Description**: Developed a custom monitoring pipeline that scrapes application metrics, aggregates request counts/latencies, and fires alerts based on dynamic error budgets.
+- **Technologies**: Go, Prometheus, Alertmanager, Docker, Slack API
+- **Relevance**: Demonstrates hands-on capabilities in building observability tools, defining SLIs/SLOs, and designing effective symptom-based alerting.
 
 > **Tip**: If you don't have all 3 projects yet, use Week 5 to build a strong ADK-based project. Having a real, deployed project to discuss in the interview is a massive advantage.
 
@@ -145,19 +142,21 @@ This role asks for someone who can:
 
 | Gap | Current Level | Target Level | Mitigation Plan |
 |-----|--------------|-------------|-----------------|
-| Google ADK specific experience | Beginner | Intermediate | Week 5 deep dive + build a project |
-| System Design at scale | Intermediate | Strong | Week 4 practice + 5 mock designs |
-| GCP-specific services | Basic | Intermediate | Hands-on with free tier + certification study |
+| Google SRE production models | Beginner | Intermediate | Week 5 SRE Book deep dive + practice |
+| Distributed systems design | Intermediate | Strong | Week 4 practice + 5 mock designs |
+| Linux kernel & tracing tools | Intermediate | Strong | System monitoring projects, study strace/lsof |
 | Hard LeetCode problems | ~30% success | ~50% success | Daily practice, focus on DP and graphs |
-| Enterprise AI constraints | Limited | Conversational | Study AI safety, data residency, compliance |
+| GKE & GCP infrastructure | Intermediate | Strong | Hands-on with GKE, configure custom ingress |
 
 ### How I'm Addressing Each Gap
 
-1. **ADK**: Building a multi-agent project using Google ADK, contributing to the open-source repo
-2. **System Design**: Following the 7-day system design plan in this repo, focusing on agent-specific designs
-3. **GCP**: Completing the GCP Fundamentals learning path, deploying projects on Cloud Run
-4. **DSA**: Solving 15+ LeetCode problems per week, focusing on weak areas
-5. **Enterprise AI**: Reading Google Cloud case studies, studying AI safety frameworks
+1. **SRE Models**: Studying the official Google SRE books and workbook, focusing on SLIs/SLOs and post-mortem best practices
+2. **System Design**: Following the 7-day system design plan in this repo, focusing on high availability, rate limiting, and metrics systems
+3. **Linux Tracing**: Practicing tracing application system calls (`strace`) and listing network connection sockets (`lsof`) under load
+4. **DSA**: Solving 15+ LeetCode problems per week, focusing on graphs, heaps, and tree traversals
+5. **GKE/GCP**: Deploying GKE test workloads, setting up Prometheus metric scraping and autoscalers (HPA)
+
+> **Why this section matters**: Google values self-awareness and growth mindset. Showing you know your gaps AND have a plan to close them is a strong signal.
 
 > **Why this section matters**: Google values self-awareness and growth mindset. Showing you know your gaps AND have a plan to close them is a strong signal.
 
@@ -186,15 +185,15 @@ Week 3: Advanced DSA
 
 Week 4: System Design
 ├── Distributed Systems, Databases
-├── Agent Orchestrator, SDK Platform
-├── Observability, Cloud Deployment
+├── Global Rate Limiter, Distributed Tracing
+├── Metrics & Alerting, Cloud Resiliency
 └── 6 system design practice sessions
 
-Week 5: Agent Development (Role-Specific)
-├── LLM Fundamentals, Agent Architectures
-├── Google ADK Deep Dive
-├── Testing, Debugging, Deployment
-└── Build end-to-end agent project
+Week 5: SRE & Systems Engineering (Role-Specific)
+├── Linux Internals, Systems Debugging
+├── SLOs, SLAs, Error Budgets, Toil Reduction
+├── Infrastructure Automation, Incident Management
+└── Observability & Alert Rules, SRE Mock Project
 
 Week 6: Behavioral & Final
 ├── STAR Stories, Googleyness prep
@@ -219,14 +218,14 @@ Week 6: Behavioral & Final
 ### System Design Interview
 - **Approach**: Requirements → Estimation → High-Level → Deep Dive → Trade-offs
 - **Communication**: Draw diagrams, discuss alternatives, quantify decisions
-- **Edge**: Agent-specific knowledge gives unique perspective on distributed AI systems
-- **Preparation**: Practiced 10+ system designs, 3 agent-specific
+- **Edge**: Focus on non-functional requirements (fault tolerance, high availability, load shedding)
+- **Preparation**: Practiced 10+ system designs, 3 SRE-specific
 
 ### Behavioral Interview
 - **Approach**: STAR method with quantified impact
 - **Stories Ready**: 10 stories covering: leadership, collaboration, conflict, failure, growth, impact
-- **Googleyness**: Prepared for "doing the right thing", ambiguity, and "for the user" questions
-- **Questions for Interviewer**: 5+ specific questions about ADK roadmap, team culture, and challenges
+- **Googleyness**: Prepared for "doing the right thing", navigating ambiguity, and blamelessness
+- **Questions for Interviewer**: 5+ specific questions about SRE practices, tooling, and post-mortems
 
 ### Interview Day Plan
 1. ✅ Arrive/connect 15 minutes early
@@ -234,7 +233,7 @@ Week 6: Behavioral & Final
 3. ✅ Start every problem by clarifying constraints
 4. ✅ Think out loud — silence is your enemy
 5. ✅ Ask if the interviewer has questions → show engagement
-6. ✅ End with thoughtful questions about the team and work
+6. ✅ End with thoughtful questions about SRE culture
 
 ---
 
@@ -243,16 +242,16 @@ Week 6: Behavioral & Final
 ### Why Hire Me?
 
 **The Short Version**:
-> "I'm a software engineer who combines strong fundamentals in data structures and algorithms with practical, hands-on experience in AI agent development. I've built, tested, and deployed agent systems, I'm comfortable with open-source collaboration, and I'm deeply motivated by the mission of making AI agents accessible to every developer through great tooling."
+> "I'm a software engineer who combines strong CS fundamentals in data structures and algorithms with hands-on experience designing and operating national-scale backends. I've built automation to reduce toil, I understand system behavior from the application level down to the Linux kernel, and I'm deeply motivated by SRE principles of engineering reliability into large-scale systems."
 
 ### Three Things That Set Me Apart
 
-1. **Builder Mindset**: I don't just study agents — I build them. [Reference your projects]
-2. **Developer Empathy**: I understand what makes a great SDK because I've been on both sides — as a tool builder and a tool user. I care about DX.
-3. **Growth Trajectory**: I'm at the right inflection point — experienced enough to contribute immediately, hungry enough to grow rapidly in a team like Agent Development.
+1. **Systems & Software Balance**: I don't just write scripts — I write clean, structured software to automate infrastructure and resolve complex failure modes.
+2. **National-Scale Uptime**: I have experience keeping systems up for nearly half a million active users (FNOMCeO), meaning I know what it means when downtime is not an option.
+3. **Stamina & Autonomy**: Balancing full-time engineering and research roles with academic success proves I can learn fast and execute under high-pressure scenarios.
 
 ### My Ask
-> "I want to be part of the team that defines how the world builds AI agents. Google's ADK is the most promising open-source framework for enterprise agent development, and I want to help make it the standard."
+> "I want to be part of the team that ensures Google's global scale services remain highly available and reliable. I want to contribute my software engineering background to automate toil and build next-generation SRE tooling."
 
 ---
 
@@ -271,9 +270,9 @@ Week 6: Behavioral & Final
 
 Throughout any interview, consistently reinforce these messages:
 
-- ✅ "I build things" → Show concrete projects
-- ✅ "I care about developer experience" → Reference how you think about API design
-- ✅ "I thrive in open-source" → Show collaboration, PR reviews, community engagement
-- ✅ "I understand enterprise needs" → Mention security, compliance, scale
-- ✅ "I'm a strong collaborator" → Reference cross-functional projects
-- ✅ "I'm ready for Google" → Preparation plan demonstrates commitment and capability
+- ✅ "I automate toil" → Highlight automation scripts and toil-reduction tools
+- ✅ "I understand system reliability" → Mention SLIs, SLOs, and Error Budgets
+- ✅ "I debug systematically" → Describe tracing process down the network stack and OS internals
+- ✅ "I understand enterprise scale" → Mention microservice HA patterns, VPCs, GKE, rate limiters
+- ✅ "I'm a strong collaborator" → Reference cross-functional projects and blameless culture
+- ✅ "I'm ready for Google SRE" → Preparation plan demonstrates commitment and systems depth

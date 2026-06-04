@@ -164,26 +164,26 @@ DATA = {
     ]},
 
     # WEEK 5
-    29: {"title": "LLM Fundamentals", "topic": "Week 5 — Agent Development", "theory": "Role Specific: LLMs.\n- Tokenization\n- Context Windows\n- Generation Parameters (Temperature, Top-P, Top-K)\n- Embeddings and Vector Databases", "is_coding": True, "problems": [
-        {"name": "Simple Token Counting", "desc": "Write a mock function to estimate token count.", "code": "def estimate_tokens(text: str) -> int:\n    # Approx 4 characters per token\n    return len(text) // 4"}
+    29: {"title": "SRE Fundamentals & Systems Internals", "topic": "Week 5 — SRE & Systems", "theory": "SRE and Systems Internals.\n- Processes, CPU scheduling, fork/exec, zombies.\n- Memory management, Swap, Page Faults, OOM Killer.\n- Linux namespaces, cgroups, container isolation.", "is_coding": True, "problems": [
+        {"name": "System Resource Tracker", "desc": "Write a script that monitors CPU and RAM thresholds and logs warning alerts when exceeded.", "code": "class ResourceMonitor:\n    def __init__(self, cpu_threshold=80.0, mem_threshold=80.0):\n        self.cpu_threshold = cpu_threshold\n        self.mem_threshold = mem_threshold\n    def check_resources(self, current_cpu: float, current_mem: float) -> list[str]:\n        # Return list of alerts\n        pass"}
     ]},
-    30: {"title": "Agent Architectures", "topic": "Week 5 — Agent Development", "theory": "Role Specific: Agents.\n- ReAct (Reason + Act)\n- Plan and Execute\n- Reflexion / Self-Correction\n- Agent Memory (Short-term/Context vs Long-term/RAG)", "is_coding": True, "problems": [
-        {"name": "Implement a simple ReAct loop", "desc": "Write a mock loop that alternates between thinking and acting.", "code": "def react_loop(prompt: str, max_steps=5):\n    for step in range(max_steps):\n        # 1. Generate Thought\n        # 2. Generate Action\n        # 3. Execute Action & Get Observation\n        pass"}
+    30: {"title": "Troubleshooting Distributed Systems", "topic": "Week 5 — SRE & Systems", "theory": "Diagnosing complex systems issues.\n- Network sockets, TCP states (TIME_WAIT, ESTABLISHED).\n- Debugging tools: strace, lsof, tcpdump, ss.\n- Saturated resources and troubleshooting workflows.", "is_coding": True, "problems": [
+        {"name": "Web Log Analyzer", "desc": "Parse a large web server log to find client IPs encountering high latency or 5xx errors.", "code": "def analyze_logs(log_lines: list[str], response_time_threshold=1000) -> dict:\n    # Parse logs and return IPs with high latency/errors\n    pass"}
     ]},
-    31: {"title": "Google ADK Deep Dive", "topic": "Week 5 — Agent Development", "theory": "Google Agent Development Kit (ADK) concepts:\n- Core abstractions\n- Integration with Gemini models\n- How it differs from LangChain/LlamaIndex\nRead the open-source repository documentation.", "is_coding": True, "problems": [
-        {"name": "ADK Boilerplate", "desc": "Write a script that initializes an agent using the ADK format.", "code": "# Pseudocode for ADK agent\nimport google.generativeai as genai\n\ndef create_agent():\n    pass"}
+    31: {"title": "Reliability & Production Readiness", "topic": "Week 5 — SRE & Systems", "theory": "Guaranteeing system reliability.\n- SLIs, SLOs, SLAs, and Error Budgets.\n- Fault-tolerant patterns: Circuit Breakers, retries with exponential backoff and jitter.", "is_coding": True, "problems": [
+        {"name": "Retry Policy with Jitter", "desc": "Implement a retry helper function with exponential backoff and random jitter to avoid thundering herds.", "code": "import time\nimport random\n\ndef retry_with_jitter(func, max_retries=3, base_delay=1.0):\n    # Execute func with retry policy and jitter\n    pass"}
     ]},
-    32: {"title": "Tool Use & Function Calling", "topic": "Week 5 — Agent Development", "theory": "Function Calling (Tool Use) allows LLMs to output structured JSON to execute code.\nKey challenge: Writing deterministic schemas for stochastic models.", "is_coding": True, "problems": [
-        {"name": "Define a JSON Schema for a Tool", "desc": "Write a JSON schema representing a tool that fetches weather.", "code": "weather_tool_schema = {\n    \"name\": \"get_weather\",\n    \"description\": \"Get the current weather in a location\",\n    \"parameters\": {\n        # Add schema here\n    }\n}"}
+    32: {"title": "Automating Infrastructure", "topic": "Week 5 — SRE & Systems", "theory": "Infrastructure as Code and Automation.\n- Terraform configuration patterns.\n- Kubernetes Pods, Services, Ingress, Deployments, Custom Operators.\n- Automation of toil (repetitive operations).", "is_coding": True, "problems": [
+        {"name": "Kubernetes Resource Config Generator", "desc": "Write a function that generates a Kubernetes deployment YAML with resource constraints and health probes.", "code": "def generate_k8s_deployment(name: str, image: str, cpu_limit=\"500m\", mem_limit=\"512Mi\") -> str:\n    # Return deployment YAML\n    pass"}
     ]},
-    33: {"title": "Testing & Debugging Agents", "topic": "Week 5 — Agent Development", "theory": "Testing non-deterministic systems:\n- Evaluating output quality (LLM-as-a-judge)\n- Asserting structural constraints (JSON output)\n- Unit testing tools independently of the LLM", "is_coding": True, "problems": [
-        {"name": "Mock LLM-as-a-judge", "desc": "Write a function that compares an agent's output against a rubric.", "code": "def evaluate_output(output: str, rubric: str) -> bool:\n    pass"}
+    33: {"title": "Incident Management & Post-Mortems", "topic": "Week 5 — SRE & Systems", "theory": "Responding to outages.\n- Incident response lifecycle: Triage, Mitigate, Resolve.\n- Post-Mortems: Blameless reviews, 5 Whys Root Cause Analysis.", "is_coding": True, "problems": [
+        {"name": "Incident Severity Classifier", "desc": "Classify incident severity based on user impact percentages and system criticality.", "code": "def classify_incident(user_impact_pct: float, is_critical_service: bool) -> str:\n    # Return SEV-1, SEV-2, or SEV-3\n    pass"}
     ]},
-    34: {"title": "Agent Deployment & Observability", "topic": "Week 5 — Agent Development", "theory": "Managing agents in production:\n- Cost tracking per token\n- Latency optimization\n- Handling context window exhaustion", "is_coding": True, "problems": [
-        {"name": "Cost Estimator", "desc": "Calculate the cost of an agent trajectory.", "code": "def calculate_cost(prompt_tokens: int, completion_tokens: int) -> float:\n    # Assume $0.50 per 1M prompt, $1.50 per 1M completion\n    pass"}
+    34: {"title": "Large-scale Observability & Monitoring", "topic": "Week 5 — SRE & Systems", "theory": "Designing metrics and logging pipelines.\n- Push vs pull metrics model, Prometheus metric format.\n- Symptom-based vs cause-based alerts, avoiding alert fatigue.", "is_coding": True, "problems": [
+        {"name": "Symptom-based Alert Evaluator", "desc": "Evaluate error rates and latency to determine if an alert should be triggered.", "code": "def evaluate_alert(error_rate: float, p95_latency: float, error_threshold=0.01, latency_threshold=500.0) -> bool:\n    # Return True if symptom alert should fire\n    pass"}
     ]},
-    35: {"title": "Review & Mock (Week 5)", "topic": "Week 5 — Agent Development", "theory": "Review Week 5 concepts: Agents, LLMs, Tool Use, ADK.\nPractice answering domain-specific interview questions.", "is_coding": True, "problems": [
-        {"name": "Build a Calculator Agent", "desc": "Implement a simple agent that can add, subtract, multiply, and divide using tools.", "code": "class CalculatorAgent:\n    def __init__(self):\n        pass\n    def run(self, query: str):\n        pass"}
+    35: {"title": "Review & SRE Mock", "topic": "Week 5 — SRE & Systems", "theory": "Review systems reliability concepts.\n- Google SRE book highlights.\n- Practice Nines calculation and systems design questions.", "is_coding": True, "problems": [
+        {"name": "Error Budget Calculations", "desc": "Calculate allowed downtime in minutes and seconds based on a given SLO percentage over a 30-day window.", "code": "def calculate_downtime_budget(slo_pct: float) -> float:\n    # Return allowed downtime in minutes\n    pass"}
     ]},
 
     # WEEK 6
@@ -233,13 +233,13 @@ def main():
         26: 'week-04-system-design/day-26-observability-and-monitoring.ipynb',
         27: 'week-04-system-design/day-27-cloud-deployment-patterns.ipynb',
         28: 'week-04-system-design/day-28-review-and-mock.ipynb',
-        29: 'week-05-agent-development/day-29-llm-fundamentals.ipynb',
-        30: 'week-05-agent-development/day-30-agent-architectures.ipynb',
-        31: 'week-05-agent-development/day-31-google-adk-deep-dive.ipynb',
-        32: 'week-05-agent-development/day-32-tool-use-and-function-calling.ipynb',
-        33: 'week-05-agent-development/day-33-testing-debugging-agents.ipynb',
-        34: 'week-05-agent-development/day-34-agent-deployment-observability.ipynb',
-        35: 'week-05-agent-development/day-35-review-and-mock.ipynb',
+        29: 'weeks/week-05-sre/day-29-sre-fundamentals.ipynb',
+        30: 'weeks/week-05-sre/day-30-troubleshooting-distributed-systems.ipynb',
+        31: 'weeks/week-05-sre/day-31-reliability-production-readiness.ipynb',
+        32: 'weeks/week-05-sre/day-32-automating-infrastructure.ipynb',
+        33: 'weeks/week-05-sre/day-33-incident-management-postmortems.ipynb',
+        34: 'weeks/week-05-sre/day-34-large-scale-observability.ipynb',
+        35: 'weeks/week-05-sre/day-35-review-and-mock.ipynb',
         36: 'week-06-behavioral-and-final/day-36-behavioral-interview-prep.ipynb',
         37: 'week-06-behavioral-and-final/day-37-googleyness-and-leadership.ipynb',
         38: 'week-06-behavioral-and-final/day-38-system-design-final.ipynb',

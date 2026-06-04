@@ -45,7 +45,7 @@
 
 ---
 
-## Story 3: [e.g., "Learning Agent Frameworks Fast"]
+## Story 3: [e.g., "Learning Kubernetes & Orchestration Fast"]
 **Tags**: `learning-ability` `adaptability` `growth-mindset`
 
 **S**: _[Context]_ | **T**: _[Responsibility]_
@@ -75,17 +75,17 @@
 
 ---
 
-## Story 6: [e.g., "Building the Open-Source Tool"]
-**Tags**: `open-source` `developer-experience` `initiative`
+## Story 6: [e.g., "Building the Automated Log Cleaner"]
+**Tags**: `automation` `toil-reduction` `initiative`
 
 **S**: _[Context]_ | **T**: _[Responsibility]_
 **A**: _[Actions]_ | **R**: _[Outcome + learning]_
 
-**Answers**: Open-source contribution, developer experience, initiative
+**Answers**: Automation project, systems scripting, initiative
 
 ---
 
-## Story 7: [e.g., "The Ambiguous Requirements"]
+## Story 7: [e.g., "The Ambiguous Production Bug"]
 **Tags**: `ambiguity` `decision-making` `googleyness`
 
 **S**: _[Context]_ | **T**: _[Responsibility]_
@@ -95,17 +95,17 @@
 
 ---
 
-## Story 8: [e.g., "Advocating for the User"]
-**Tags**: `user-focus` `product-thinking` `impact`
+## Story 8: [e.g., "Advocating for System Reliability"]
+**Tags**: `reliability-focus` `systems-thinking` `impact`
 
 **S**: _[Context]_ | **T**: _[Responsibility]_
 **A**: _[Actions]_ | **R**: _[Outcome + learning]_
 
-**Answers**: User advocacy, product influence, user feedback
+**Answers**: User advocacy, system capacity influence, blamelessness
 
 ---
 
-## Story 9: [e.g., "The Critical Feedback"]
+## Story 9: [e.g., "The Post-Mortem Feedback"]
 **Tags**: `growth-mindset` `self-awareness` `coachability`
 
 **S**: _[Context]_ | **T**: _[Responsibility]_
@@ -115,7 +115,7 @@
 
 ---
 
-## Story 10: [e.g., "The High-Impact Feature"]
+## Story 10: [e.g., "The High-Availability Migration"]
 **Tags**: `impact` `delivery` `technical-excellence`
 
 **S**: _[Context]_ | **T**: _[Responsibility]_
@@ -136,7 +136,7 @@
 | Initiative | 1, 3, 6 |
 | Failure/Growth | 4, 9 |
 | Technical Depth | 1, 3, 10 |
-| User Focus | 8 |
-| Agent/AI Specific | 3, 6, 10 |
+| User/Reliability Focus | 8 |
+| SRE/Systems Specific | 3, 6, 10 |
 
 > **Goal**: Every dimension covered by 2+ stories. Fill gaps as needed.

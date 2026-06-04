@@ -1,6 +1,6 @@
 # ✅ Complete Preparation Checklist
 
-> Track every step of your Google SWE II, Agent Development preparation.
+> Track every step of your Google Site Reliability Engineer (SRE) preparation.
 > Mark items with `[x]` as you complete them.
 
 ---
@@ -9,7 +9,7 @@
 
 ### Application Preparation
 - [ ] Read the full job description 3 times and highlight key requirements
-- [ ] Research the Agent Development Kit (ADK) team at Google
+- [ ] Research the Site Reliability Engineering (SRE) team at Google
 - [ ] Identify which qualifications you already meet
 - [ ] Identify gaps between your profile and the role requirements
 - [ ] Set a target application date (ideally after 6 weeks of preparation)
@@ -21,8 +21,8 @@
 ### CV Improvement
 - [ ] Update CV to be 1 page (Google prefers concise CVs)
 - [ ] Add quantifiable impact metrics to every bullet point (e.g., "reduced latency by 40%")
-- [ ] Highlight experience with Python, SDKs, open-source, or AI/ML
-- [ ] Add any agent/LLM related projects prominently
+- [ ] Highlight experience with Python, Go, C++, Linux, distributed systems, or automation
+- [ ] Add any systems engineering, cloud, or automation projects prominently
 - [ ] Tailor the summary/objective section to this specific role
 - [ ] Remove irrelevant experience or skills
 - [ ] Have 2-3 people review your CV
@@ -45,7 +45,7 @@
 - [ ] Install all dependencies (`pip install -r requirements.txt`)
 - [ ] Create a LeetCode account (Premium recommended)
 - [ ] Create a Google Cloud account (free tier)
-- [ ] Install Google ADK (`pip install google-adk`)
+- [ ] Study the Google SRE Books (sre.google/books)
 - [ ] Set up a GitHub account for portfolio projects
 
 ---
@@ -270,100 +270,94 @@
 - [ ] Review: Study reference architecture
 - [ ] Complete daily exercises
 
-### Day 24: Designing an Agent Orchestrator
-- [ ] Read theory in `week-04-system-design/day-24-designing-an-agent-orchestrator.ipynb`
-- [ ] Study: Multi-agent patterns, state management, tool routing
-- [ ] Study: How ADK handles orchestration internally
-- [ ] Practice: Design a multi-agent orchestration platform (35 min)
-- [ ] Review: Compare with existing solutions (LangGraph, CrewAI, ADK)
+### Day 24: Designing a Global Rate Limiter
+- [ ] Read theory in `week-04-system-design/day-24-designing-a-global-rate-limiter.ipynb`
+- [ ] Study: Token bucket, leaky bucket, sliding window counters, distributed locks
+- [ ] Study: Handling race conditions, Redis cluster synchronization
+- [ ] Practice: Design a global rate limiter service (35 min)
+- [ ] Review: Compare with Envoy rate limiter and Google Cloud Armor
 - [ ] Complete daily exercises
 
-### Day 25: Designing an SDK Platform
-- [ ] Read theory in `week-04-system-design/day-25-designing-an-sdk-platform.ipynb`
-- [ ] Study: API design principles, versioning strategies, plugin architecture
-- [ ] Study: Developer experience, documentation-first approach
-- [ ] Practice: Design an open-source SDK for AI agents (35 min)
-- [ ] Review: Study how Google designs public APIs
+### Day 25: Designing a Distributed Tracing System
+- [ ] Read theory in `week-04-system-design/day-25-designing-a-distributed-tracing-system.ipynb`
+- [ ] Study: Trace propagation, spans, trace context, sampling strategies
+- [ ] Study: High write-throughput data pipelines, storage options
+- [ ] Practice: Design a distributed tracing system (35 min)
+- [ ] Review: Study OpenTelemetry, Jaeger, and Dapper (Google's tracing system)
 - [ ] Complete daily exercises
 
-### Day 26: Observability & Monitoring
+### Day 26: Metrics & Alerting Pipeline
 - [ ] Read theory in `week-04-system-design/day-26-observability-and-monitoring.ipynb`
-- [ ] Study: Logging, distributed tracing, metrics, alerting
-- [ ] Study: Agent-specific observability challenges
-- [ ] Practice: Design an agent observability platform (35 min)
-- [ ] Review: Study OpenTelemetry, Cloud Trace, Cloud Monitoring
+- [ ] Study: Pull vs push metric models, Prometheus format, alerting rules
+- [ ] Study: Alert fatigue, deduplication, grouping, symptom-based alerting
+- [ ] Practice: Design a metrics collection and alerting pipeline (35 min)
+- [ ] Review: Study Prometheus, Borgmon, and Google Cloud Monitoring
 - [ ] Complete daily exercises
 
-### Day 27: Cloud Deployment Patterns
+### Day 27: Cloud Resiliency & Scaling
 - [ ] Read theory in `week-04-system-design/day-27-cloud-deployment-patterns.ipynb`
-- [ ] Study: Kubernetes, Cloud Run, serverless, CI/CD pipelines
-- [ ] Study: GCP services relevant to agent deployment
-- [ ] Practice: Design an agent deployment pipeline on GCP (35 min)
-- [ ] Review: Compare with Vertex AI Agent Builder
+- [ ] Study: Auto-scaling (HPA), multi-region deployments, traffic routing, health checks
+- [ ] Study: Ingress controllers, DNS-based load balancing, Anycast
+- [ ] Practice: Design a resilient multi-region application deployment (35 min)
+- [ ] Review: Study Kubernetes Ingress and Global Load Balancing (GCLB)
 - [ ] Complete daily exercises
 
 ### Day 28: Week 4 Review & Mock
-- [ ] Full system design mock: Design Google ADK from scratch (45 min)
+- [ ] Full system design mock: - [ ] Full system design mock: Design a distributed metrics collection pipeline (45 min)
 - [ ] Practice explaining trade-offs out loud
 - [ ] Review all system design notes
 - [ ] Update progress tracker
 
 ---
 
-## Week 5: Agent Development (Role-Specific)
+## Week 5: SRE & Systems Engineering (Role-Specific)
 
-### Day 29: LLM Fundamentals
-- [ ] Read theory in `week-05-agent-development/day-29-llm-fundamentals.ipynb`
-- [ ] Study: Transformer architecture (attention mechanism, tokenization)
-- [ ] Study: Prompting techniques (zero-shot, few-shot, chain-of-thought)
-- [ ] Hands-on: Build a prompt engineering toolkit
-- [ ] Review: Test different prompting strategies with a real LLM
+### Day 29: SRE & Systems Internals
+- [ ] Read theory in `week-05-sre/day-29-sre-fundamentals.ipynb`
+- [ ] Study: OS processes, scheduler, CPU states, fork/exec, file descriptors, virtual memory
+- [ ] Study: Linux namespaces, cgroups, container primitives
+- [ ] Hands-on: Build a system resource monitor / tracker in Python
 - [ ] Complete daily exercises
 
-### Day 30: Agent Architectures
-- [ ] Read theory in `week-05-agent-development/day-30-agent-architectures.ipynb`
-- [ ] Study: ReAct, Chain-of-Thought, Plan-and-Execute, Multi-Agent
-- [ ] Study: Tool use patterns, memory systems, planning
-- [ ] Hands-on: Implement a ReAct agent from scratch (no framework)
-- [ ] Review: Compare your implementation with ADK's approach
+### Day 30: Troubleshooting Systems
+- [ ] Read theory in `week-05-sre/day-30-troubleshooting-distributed-systems.ipynb`
+- [ ] Study: Socket operations, TCP connection states, DNS resolution troubleshooting
+- [ ] Study: Core debug utilities: strace, lsof, tcpdump, top, netstat
+- [ ] Hands-on: Write a distributed logs parser & incident analyzer
 - [ ] Complete daily exercises
 
-### Day 31: Google ADK Deep Dive
-- [ ] Read theory in `week-05-agent-development/day-31-google-adk-deep-dive.ipynb`
-- [ ] Study: ADK architecture, agent types, tool definitions
-- [ ] Study: Session management, state handling, callbacks
-- [ ] Hands-on: Build a multi-tool agent using Google ADK
-- [ ] Review: Read ADK source code, study open issues on GitHub
+### Day 31: Reliability Models
+- [ ] Read theory in `week-05-sre/day-31-reliability-production-readiness.ipynb`
+- [ ] Study: Service Level Indicators (SLIs), Service Level Objectives (SLOs), SLAs, Error Budgets
+- [ ] Study: Failure mitigation: circuit breakers, exponential backoff, jitter
+- [ ] Hands-on: Implement a retry policy with exponential backoff and jitter in Python
 - [ ] Complete daily exercises
 
-### Day 32: Tool Use & Function Calling
-- [ ] Read theory in `week-05-agent-development/day-32-tool-use-and-function-calling.ipynb`
-- [ ] Study: Function calling protocols, tool schemas, error handling
-- [ ] Study: OpenAPI integration, custom tool creation, validation
-- [ ] Hands-on: Create 3 custom tools with input validation and error handling
-- [ ] Review: Test tools in an agent workflow
+### Day 32: Infrastructure Automation
+- [ ] Read theory in `week-05-sre/day-32-automating-infrastructure.ipynb`
+- [ ] Study: Infrastructure as Code (Terraform), Kubernetes controllers & custom operators
+- [ ] Study: Automating toil, continuous integration, continuous delivery (CI/CD) pipelines
+- [ ] Hands-on: Build a toil-reduction cleanup & check operator script
 - [ ] Complete daily exercises
 
-### Day 33: Testing & Debugging Agents
-- [ ] Read theory in `week-05-agent-development/day-33-testing-debugging-agents.ipynb`
-- [ ] Study: Unit testing non-deterministic systems, mocking LLMs
-- [ ] Study: Evaluation frameworks, metrics for agent quality
-- [ ] Hands-on: Build an agent testing harness with pytest
-- [ ] Review: Study how ADK handles testing internally
+### Day 33: Incident Management
+- [ ] Read theory in `week-05-sre/day-33-incident-management-postmortems.ipynb`
+- [ ] Study: Incident response lifecycle, severity definitions, blameless post-mortems
+- [ ] Study: Root cause analysis, the 5 Whys technique
+- [ ] Hands-on: Write an incident severity classifier & template builder
 - [ ] Complete daily exercises
 
-### Day 34: Agent Deployment & Observability
-- [ ] Read theory in `week-05-agent-development/day-34-agent-deployment-observability.ipynb`
-- [ ] Study: Containerization, Docker, Cloud Run deployment
-- [ ] Study: Agent tracing, metrics collection, cost monitoring
-- [ ] Hands-on: Deploy an agent to Google Cloud Run (or local Docker)
-- [ ] Review: Set up basic monitoring and alerting
+### Day 34: Observability Pipelines
+- [ ] Read theory in `week-05-sre/day-34-large-scale-observability.ipynb`
+- [ ] Study: Push vs pull metric architectures, alerting rules design, distributed tracing propagation
+- [ ] Study: Defining symptoms vs causes in alerting to avoid alert fatigue
+- [ ] Hands-on: Build a Prometheus metrics parser & alert rule engine
 - [ ] Complete daily exercises
 
-### Day 35: Week 5 Review & Mock
-- [ ] Complete your end-to-end agent project (built, tested, deployed)
-- [ ] Practice explaining your agent architecture decisions
-- [ ] Prepare to discuss ADK in a technical interview
+### Day 35: Week 5 Review & SRE Mock
+- [ ] Complete your end-to-end SRE automation project
+- [ ] Practice explaining SRE principles and troubleshooting steps out loud
+- [ ] Prepare to discuss the Google SRE model in a technical interview
 - [ ] Update progress tracker
 
 ---
@@ -385,9 +379,8 @@
 - [ ] Practice with a friend or on Pramp
 
 ### Day 38: System Design Final Practice
-- [ ] Complete 2 full system design mocks (45 min each, timed)
-- [ ] Practice: Design a real-time AI agent collaboration platform
-- [ ] Practice: Design a tool marketplace for AI agents
+- [ ] Practice: Design a distributed lock manager (e.g. Chubby)
+- [ ] Practice: Design a global CDN cache eviction system
 - [ ] Review: Get feedback from a peer or online community
 
 ### Day 39: Coding Final — Hard Problems
@@ -398,16 +391,16 @@
 
 ### Day 40: Full Mock Interview
 - [ ] Round 1: Coding interview (45 min) — 1 Medium + 1 Hard
-- [ ] Round 2: System Design (45 min) — Agent-related system
+- [ ] Round 2: System Design (45 min) — Reliability-focused distributed system
 - [ ] Round 3: Behavioral (30 min) — Googleyness + Leadership
 - [ ] Debrief: Note what went well and what needs improvement
 
 ### Day 41: Role Fit & Portfolio
 - [ ] Prepare your "Why Google?" answer (specific, not generic)
-- [ ] Prepare your "Why Agent Development?" answer
-- [ ] Prepare your "Why SWE II?" answer (growth narrative)
-- [ ] Finalize your portfolio project on GitHub
-- [ ] Prepare 5+ questions to ask your interviewer about ADK
+- [ ] Prepare your "Why SRE?" answer
+- [ ] Prepare your "Why SRE/SWE-SRE?" answer (reliability vs development narrative)
+- [ ] Finalize your SRE portfolio project on GitHub
+- [ ] Prepare 5+ questions to ask your interviewer about SRE production practices
 - [ ] Read `PRESENTATION.md` and internalize key talking points
 
 ### Day 42: Final Review & Application
@@ -425,9 +418,9 @@
 
 ### While Waiting for Response
 - [ ] Continue solving 2-3 LeetCode problems daily
-- [ ] Refine your agent portfolio project
+- [ ] Refine your SRE/systems portfolio project
 - [ ] Practice 1 system design problem per week
-- [ ] Stay up to date with Google ADK releases and blog posts
+- [ ] Stay up to date with Google SRE developments and post-mortems
 - [ ] Network with Google employees on LinkedIn (politely)
 
 ### If You Get a Phone Screen
@@ -461,4 +454,4 @@
 **Total LeetCode Problems Solved**: 0 / 120+
 **System Design Mocks Completed**: 0 / 10
 **Behavioral Stories Prepared**: 0 / 10
-**Agent Projects Completed**: 0 / 1
+**SRE Projects Completed**: 0 / 1

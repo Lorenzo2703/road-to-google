@@ -105,14 +105,14 @@ create_notebook(f'{w4}/day-27-cloud-deployment-patterns.ipynb', 'Cloud Deploymen
 create_notebook(f'{w4}/day-28-review-and-mock.ipynb', 'Review & Mock', 28, 'Week 4 — System Design', False)
 
 # Week 5
-w5 = 'week-05-agent-development'
-create_notebook(f'{w5}/day-29-llm-fundamentals.ipynb', 'LLM Fundamentals', 29, 'Week 5 — Agent Development')
-create_notebook(f'{w5}/day-30-agent-architectures.ipynb', 'Agent Architectures', 30, 'Week 5 — Agent Development')
-create_notebook(f'{w5}/day-31-google-adk-deep-dive.ipynb', 'Google ADK Deep Dive', 31, 'Week 5 — Agent Development')
-create_notebook(f'{w5}/day-32-tool-use-and-function-calling.ipynb', 'Tool Use & Function Calling', 32, 'Week 5 — Agent Development')
-create_notebook(f'{w5}/day-33-testing-debugging-agents.ipynb', 'Testing & Debugging Agents', 33, 'Week 5 — Agent Development')
-create_notebook(f'{w5}/day-34-agent-deployment-observability.ipynb', 'Agent Deployment & Observability', 34, 'Week 5 — Agent Development')
-create_notebook(f'{w5}/day-35-review-and-mock.ipynb', 'Review & Mock', 35, 'Week 5 — Agent Development')
+w5 = 'weeks/week-05-sre'
+create_notebook(f'{w5}/day-29-sre-fundamentals.ipynb', 'SRE Fundamentals', 29, 'Week 5 — SRE & Systems')
+create_notebook(f'{w5}/day-30-troubleshooting-distributed-systems.ipynb', 'Troubleshooting Distributed Systems', 30, 'Week 5 — SRE & Systems')
+create_notebook(f'{w5}/day-31-reliability-production-readiness.ipynb', 'Reliability & Production Readiness', 31, 'Week 5 — SRE & Systems')
+create_notebook(f'{w5}/day-32-automating-infrastructure.ipynb', 'Automating Infrastructure', 32, 'Week 5 — SRE & Systems')
+create_notebook(f'{w5}/day-33-incident-management-postmortems.ipynb', 'Incident Management & Post-Mortems', 33, 'Week 5 — SRE & Systems')
+create_notebook(f'{w5}/day-34-large-scale-observability.ipynb', 'Large-Scale Observability', 34, 'Week 5 — SRE & Systems')
+create_notebook(f'{w5}/day-35-review-and-mock.ipynb', 'Review & Mock', 35, 'Week 5 — SRE & Systems')
 
 # Week 6
 w6 = 'week-06-behavioral-and-final'

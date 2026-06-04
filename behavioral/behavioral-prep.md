@@ -13,7 +13,7 @@ Google evaluates candidates across four key dimensions:
 | **General Cognitive Ability** | Problem-solving, learning ability, structured thinking | High |
 | **Leadership** | Leading by influence, taking initiative, mentoring | Medium |
 | **Googleyness** | Doing the right thing, working collaboratively, navigating ambiguity | High |
-| **Role-Related Knowledge** | Technical depth in agent development, SDKs, AI | High |
+| **Role-Related Knowledge** | Technical depth in systems internals, networking, automation | High |
 
 > **Key Insight**: Google doesn't just evaluate WHAT you did, but HOW you think and WHY you made certain decisions.
 
@@ -69,10 +69,10 @@ Every behavioral answer should follow STAR:
 - **Mistake to avoid**: Don't just describe the solution — describe the THINKING process
 
 **Q5: Describe a time you had to learn a completely new technology quickly.**
-- **Why Google asks this**: Agent development is fast-moving; they need fast learners
+- **Why Google asks this**: SRE is a broad, fast-moving discipline; they need people who can pick up systems internals and tracing quickly
 - **What to emphasize**: Your learning strategy, how you applied it, the timeline
 - **Follow-up**: "How do you decide what to learn deeply vs. just enough?"
-- **Ideal for this role**: Talk about learning an AI/agent framework
+- **Ideal for this role**: Talk about learning a complex distributed system (like Kubernetes) or a systems language (like Go)
 
 **Q6: Tell me about a time you made a mistake. How did you handle it?**
 - **Why Google asks this**: Self-awareness and growth mindset
@@ -81,7 +81,7 @@ Every behavioral answer should follow STAR:
 - **Mistake to avoid**: Don't pick a trivial mistake. Show real failure with real learning.
 
 **Q7: Describe a time you had to make a decision with incomplete information.**
-- **Why Google asks this**: Agent development involves lots of ambiguity
+- **Why Google asks this**: Production incidents are inherently ambiguous and require calm, data-driven reasoning
 - **What to emphasize**: How you gathered what info you could, made assumptions explicit, managed risk
 - **Follow-up**: "Were your assumptions correct? What would you do differently?"
 
@@ -116,7 +116,7 @@ Every behavioral answer should follow STAR:
 - **Follow-up**: "How did this affect your own work?"
 
 **Q13: Tell me about a time you navigated ambiguity successfully.**
-- **Why Google asks this**: Agent development is a new field — ambiguity is constant
+- **Why Google asks this**: Troubleshooting a system outage means navigating major ambiguity under time pressure
 - **What to emphasize**: How you created structure from chaos, made progress without clear direction
 - **Follow-up**: "How do you decide when to seek clarity vs. just move forward?"
 
@@ -142,21 +142,20 @@ Every behavioral answer should follow STAR:
 - **What to emphasize**: Your decision framework, how you communicated trade-offs
 - **Follow-up**: "How did stakeholders react to your prioritization?"
 
-### Category 6: Role-Specific (Agent Development)
+### Category 6: Role-Specific (Site Reliability Engineering)
 
-**Q18: Why are you interested in agent development specifically?**
-- **What to emphasize**: Your genuine interest in the space, specific projects or experiences, vision for the future
-- **Strong answer elements**: Mention ADK, specific agent capabilities you're excited about, enterprise applications
-- **Mistake to avoid**: "AI is hot right now" — show deep, genuine interest
+**Q18: Why are you interested in Site Reliability Engineering specifically?**
+- **What to emphasize**: Your interest in high availability, distributed systems design, and reducing toil through software automation. Mention SRE principles.
+- **Strong answer elements**: Mention SLOs/SLIs, Google SRE Book principles, and applying software engineering solutions to operations.
+- **Mistake to avoid**: "I just want an operations job" — show you view SRE as engineering.
 
-**Q19: How would you approach building a developer tool for a new audience?**
-- **What to emphasize**: User research, developer experience, iterative design, documentation
-- **Follow-up**: "How do you handle conflicting developer needs?"
+**Q19: How do you approach writing software to automate away manual operations (toil)?**
+- **What to emphasize**: Identifying repetitive, non-creative work, defining clear requirements, building structured software/scripts rather than hacky workarounds, measuring time saved, and scaling the automation safely.
+- **Follow-up**: "How do you measure the cost-benefit trade-off of writing automation?"
 
-**Q20: Tell me about a time you contributed to an open-source project.**
-- **What to emphasize**: Your contributions, community interaction, code reviews
-- **If you haven't**: Describe how you'd approach it (and actually do it before the interview!)
-- **Follow-up**: "How is open-source development different from internal development?"
+**Q20: Describe how you would handle a post-mortem review after a critical system outage.**
+- **What to emphasize**: Promoting a blameless culture, identifying root causes (5 Whys), establishing clear action items to prevent recurrence, and sharing learnings across the engineering team.
+- **Follow-up**: "What do you do if a team member is defensive during the review?"
 
 ---
 
@@ -243,13 +242,13 @@ After every STAR story, expect 2-3 follow-up questions:
 ## Questions to Ask Your Interviewer
 
 ### About the Team
-1. "What does the ADK team's roadmap look like for the next year?"
-2. "How does the ADK team work with external open-source contributors?"
-3. "What's the biggest technical challenge the agent development team is facing right now?"
+1. "What SRE tooling is the team currently building or looking to adopt?"
+2. "How does the SRE team collaborate with the product SWE teams at Google?"
+3. "What's the biggest reliability or scaling challenge the team is facing right now?"
 
 ### About the Role
-4. "What does a typical day look like for an SWE II on this team?"
-5. "How do you balance building new features vs. maintaining the existing SDK?"
+4. "What does a typical day look like for an SRE on this team?"
+5. "How do you balance operational tasks (on-call/toil) with software engineering projects?"
 6. "What does success look like in the first 6 months for this role?"
 
 ### About the Culture

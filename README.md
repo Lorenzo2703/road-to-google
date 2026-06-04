@@ -1,8 +1,8 @@
-# 🚀 Road to Google — SWE II, Agent Development
+# 🚀 Road to Google — Site Reliability Engineer (SRE)
 
-> A comprehensive, structured preparation plan to maximize chances of landing a **Software Engineer II, Agent Development** role at Google.
+> A comprehensive, structured preparation plan to maximize chances of landing a **Site Reliability Engineer (SRE)** role at Google.
 
-[![Google](https://img.shields.io/badge/Google-SWE%20II-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://www.google.com/about/careers/applications/jobs/results/90093189238530758-software-engineer-ii-agent-development)
+[![Google](https://img.shields.io/badge/Google-SRE-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://www.google.com/about/careers/applications/jobs/results/?q=Site%20Reliability%20Engineer)
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](#)
 [![LeetCode](https://img.shields.io/badge/LeetCode-Practice-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](#)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](#license)
@@ -11,37 +11,37 @@
 
 ## 📋 About This Repository
 
-This repository contains a **42-day structured preparation plan** for the Google SWE II, Agent Development position. Every day includes theory, practice problems, and hands-on coding exercises organized as Jupyter notebooks.
+This repository contains a **42-day structured preparation plan** for the Google Site Reliability Engineer (SRE) position. Every day includes theory, practice problems, and hands-on coding exercises organized as Jupyter notebooks.
 
 ### 🎯 Target Role
 
 | Field | Details |
 |-------|---------|
-| **Position** | Software Engineer II, Agent Development |
+| **Position** | Site Reliability Engineer (SRE) |
 | **Company** | Google |
-| **Team** | Agent Development Kit (ADK) |
-| **Focus** | Open-source SDKs, AI agent lifecycle tooling |
+| **Team** | Site Reliability Engineering (SRE) |
+| **Focus** | Systems internals, automation of toil, large-scale reliability |
 | **Level** | L4 (Mid-level) |
 
 ### 📌 Role Responsibilities
 
-- Design, develop, and maintain quality, open-source SDKs for the **Agent Development Kit (ADK)** framework
-- Build and improve tooling to support the **AI agent development lifecycle** (testing, debugging, deployment, observability)
-- Collaborate with internal and external developers to translate needs into **new features**
-- Work with cloud teams for **deployment and management of AI agents** on Google Cloud Platform
+- Write and design software to improve the availability, latency, scalability, and efficiency of Google's services
+- Eliminate toil (repetitive, manual tasks) by building automation pipelines and software systems
+- Troubleshoot complex, high-concurrency systems issues across all layers of the stack (kernel, networks, storage, application)
+- Design and implement robust observability, alerting, and auto-remediation platforms on Google Cloud and internal platforms
 
 ### 📌 Minimum Qualifications
 
 - Bachelor's degree or equivalent practical experience
-- 1 year of experience with software development (Python, C, C++, Java, JavaScript)
+- 1 year of experience with software development (Python, Go, C++, Java, or JavaScript)
 - 1 year of experience with data structures and algorithms
 
 ### 📌 Preferred Qualifications
 
-- Experience with AI, machine learning, LLMs, or AI agents
-- Experience building applications for enterprise needs (AI safety, data residency, system integration)
-- Understanding of the needs of Cloud customers
-- Ability to bridge the gap between AI technology and real-world use cases
+- Experience with systems programming and Unix/Linux system internals (memory management, kernel, processes, sockets)
+- Experience designing and building large-scale distributed systems with high availability requirements
+- Deep understanding of networking protocols (TCP/IP, HTTP, DNS, gRPC) and container orchestration (Kubernetes, Docker)
+- Experience with observability tools (Prometheus, Grafana, OpenTelemetry, Jaeger)
 
 ---
 
@@ -142,8 +142,8 @@ road-to-google/
 | **Week 1** | DSA Foundations | 1-7 | Arrays, HashMaps, Two Pointers, Sliding Window, Stacks, Linked Lists |
 | **Week 2** | Intermediate DSA | 8-14 | Binary Search, Trees, Heaps, Recursion, Sorting |
 | **Week 3** | Advanced DSA | 15-21 | Graphs, Dynamic Programming, Tries, Greedy |
-| **Week 4** | System Design | 22-28 | Distributed Systems, Agent Orchestrator, SDK Design, Cloud |
-| **Week 5** | Agent Development | 29-35 | LLMs, Agent Architectures, ADK, Testing, Deployment |
+| **Week 4** | System Design | 22-28 | Distributed Systems, Rate Limiting, Distributed Tracing, Cloud |
+| **Week 5** | SRE & Systems | 29-35 | Linux Internals, Systems Debugging, SLOs/Error Budgets, Automation |
 | **Week 6** | Behavioral & Final | 36-42 | Behavioral, Googleyness, Mock Interviews, Application |
 
 ### 📚 Supplementary Materials
@@ -187,11 +187,12 @@ For topics that cross-cut multiple weeks or provide deep-dives into CS fundament
 - Cloud Deployment (K8s, Docker, CI/CD).
 - **Operating Systems**: Processes, Threads, Concurrency, Mutexes, Locks.
 
-### Week 5: Agent Development & LLMs
-- LLM Fundamentals (Tokenization, Prompt Engineering).
-- Agent Architectures (ReAct, Multi-Agent Orchestration).
-- Google ADK Deep Dive & Tool Use.
-- Testing, Debugging, and Safety Guardrails for AI.
+### Week 5: SRE & Systems Engineering
+- Linux System Internals (processes, scheduler, virtual memory, namespaces).
+- Troubleshooting Distributed Systems (network metrics, kernel tracing, resource exhaustion).
+- Service Level Objectives (SLOs, SLIs, SLAs) and Error Budgets.
+- Automating Infrastructure & Toil Reduction (IaC, Kubernetes).
+- Observability and Alert Design (Prometheus, Grafana, OpenTelemetry).
 
 ### Week 6: Behavioral & Final Polish
 - STAR Method & Behavioral Interviewing.
@@ -257,8 +258,8 @@ Day 03: ⬜ Two Pointers — Not started
 | [LeetCode](https://leetcode.com) | Algorithm practice |
 | [NeetCode](https://neetcode.io) | Curated problem sets |
 | [System Design Primer](https://github.com/donnemartin/system-design-primer) | System design fundamentals |
-| [Google ADK Docs](https://google.github.io/adk-docs/) | Agent Development Kit |
-| [Google ADK GitHub](https://github.com/google/adk-python) | ADK source code |
+| [Google SRE Book](https://sre.google/sre-book/table-of-contents/) | The Site Reliability Engineering Book |
+| [Google SRE Workbook](https://sre.google/workbook/table-of-contents/) | SRE Workbook and Case Studies |
 | [Designing Data-Intensive Apps](https://dataintensive.net/) | Distributed systems |
 | [Tech Interview Handbook](https://www.techinterviewhandbook.org/) | Interview prep |
 | [Cracking the Coding Interview](http://www.crackingthecodinginterview.com/) | Classic interview prep |
@@ -278,9 +279,7 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 # Useful links
 * [Grok Test](https://grok.com/assessment/4)
-* https://github.com/google/adk-python
-* https://github.com/google/gemini-python
-* https://gemini.google.com/share/6e2d6ffd8647
-* https://gemini.google.com/share/d7bff38c84ec
-* https://github.com/google/adk-docs
+* https://sre.google/sre-book/table-of-contents/
+* https://sre.google/workbook/table-of-contents/
+* https://sre.google/class-sre-book/table-of-contents/
 * https://docs.google.com/document/d/1tzei5oAvaRp5HregWCscxb7CL_7IugZYclgGwTGQ0Fs/edit?tab=t.0

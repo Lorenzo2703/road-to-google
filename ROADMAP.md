@@ -1,6 +1,6 @@
 # 🗺️ Detailed 6-Week Preparation Roadmap
 
-> Google SWE II, Agent Development — Personalized Week-by-Week Plan
+> Google Site Reliability Engineer (SRE) — Personalized Week-by-Week Plan
 
 ---
 
@@ -184,32 +184,33 @@ Prepare for the system design interview with focus on agent-related architecture
 |-----|-------|-------------|------------------|------|
 | 22 | SD Fundamentals | Load balancing, caching, databases, CAP theorem | Design a URL shortener | 3-4h |
 | 23 | Distributed Systems | Consistency, partitioning, replication, message queues | Design a distributed task queue | 3-4h |
-| 24 | Agent Orchestrator | Multi-agent coordination, tool routing, state management | Design a multi-agent orchestration platform | 4h |
-| 25 | SDK Platform Design | API design, versioning, plugin architecture, DX | Design an open-source SDK for AI agents | 4h |
-| 26 | Observability & Monitoring | Logging, tracing, metrics, debugging distributed agents | Design an agent observability platform | 3-4h |
-| 27 | Cloud Deployment | GCP services, Kubernetes, serverless, CI/CD | Design agent deployment pipeline on GCP | 3-4h |
-| 28 | Review & Mock | Full system design mock interview | Design Google ADK from scratch (45 min) | 4h |
+| 24 | Global Rate Limiter | Token bucket, sliding window logs, distributed rate limiters | Design a global rate limiter service | 4h |
+| 25 | Distributed Tracing | Span propagation, sampling strategies, storage, query engine | Design a distributed tracing system | 4h |
+| 26 | Metrics & Alerting Pipeline | Pull vs push metrics, alerting rules, alert deduplication | Design a metrics collection and alerting pipeline | 3-4h |
+| 27 | Cloud Resiliency & Scaling | Auto-scaling, multi-region failover, Kubernetes ingress | Design a resilient multi-region application deployment | 3-4h |
+| 28 | Review & Mock | Full system design mock interview | Design a distributed metrics collection pipeline (45 min) | 4h |
 
 ### 🧠 Skills to Improve
 - Structuring a system design answer (requirements → high-level → deep dive → trade-offs)
 - Estimating scale (back-of-envelope calculations)
 - Discussing trade-offs clearly
-- Designing for agent-specific concerns (tool calls, LLM latency, state management)
+- Designing for system reliability (availability, latency, consistency, failure handling)
 
 ### 📊 Expected Outcomes
 - Complete a system design in 35-40 minutes with clear structure
 - Discuss 3+ trade-offs for each design decision
-- Relate system design concepts to agent development
+- Relate system design concepts to site reliability engineering
+- Design for reliability-specific concerns (redundancy, failover, latency, monitoring)
 
 ### ⚠️ Common Mistakes
 - Jumping to the solution without gathering requirements
 - Not discussing trade-offs (this is what Google evaluates most!)
 - Ignoring non-functional requirements (scalability, latency, cost)
-- Not relating to the agent development role
+- Not relating to the SRE role
 
 ### 💡 Practical Advice
 - **Structure**: Use the framework: Clarify → Estimate → High-Level Design → Deep Dive → Trade-offs
-- **Agent-Specific**: Always consider: How do agents maintain state? How do you handle LLM failures? How do you observe agent behavior?
+- **SRE-Specific**: Always consider: How does the system handle network partitions? What are the failover strategies? How do you limit blast radius?
 - **Google Cloud**: Know GCP services: Cloud Run, GKE, Pub/Sub, BigQuery, Vertex AI, Cloud Functions
 - **Practice talking**: Do system design out loud, not just on paper
 
@@ -220,51 +221,51 @@ Prepare for the system design interview with focus on agent-related architecture
 
 ---
 
-## Week 5: Agent Development — Role-Specific (Days 29-35)
+## Week 5: SRE & Systems Engineering — Role-Specific (Days 29-35)
 
 ### 🎯 Main Objective
-Deep-dive into everything related to agent development, ADK, and the specific skills Google is looking for.
+Deep-dive into systems programming, troubleshooting, reliability models, automation, and observability.
 
 ### 📅 Daily Breakdown
 
 | Day | Topic | Key Concepts | Hands-On Project | Time |
 |-----|-------|-------------|-----------------|------|
-| 29 | LLM Fundamentals | Transformers, attention, tokenization, prompting | Build a prompt engineering toolkit | 4h |
-| 30 | Agent Architectures | ReAct, CoT, tool-use, multi-agent patterns | Implement a ReAct agent from scratch | 4h |
-| 31 | Google ADK Deep Dive | ADK architecture, agent types, tools, sessions | Build a multi-tool agent with ADK | 4h |
-| 32 | Tool Use & Function Calling | Function calling, tool schemas, error handling | Create custom tools with validation | 4h |
-| 33 | Testing & Debugging Agents | Unit testing agents, mocking LLMs, eval frameworks | Build an agent testing harness | 4h |
-| 34 | Agent Deployment & Observability | Containerization, tracing, metrics, GCP integration | Deploy an agent to Cloud Run | 4h |
-| 35 | Review & Mock | Complete agent development project | End-to-end agent with ADK, tested and deployed | 4h |
+| 29 | SRE & Systems Internals | Processes, scheduling, memory, syscalls, Linux namespaces | Build a system resource monitor / tracker | 4h |
+| 30 | Troubleshooting Systems | TCP connection states, strace, lsof, tcpdump, latency diagnostics | Write a distributed logs parser & incident analyzer | 4h |
+| 31 | Reliability Models | SLOs, SLIs, SLAs, Error Budgets, exponential backoff with jitter | Implement a retry policy with exponential jitter | 4h |
+| 32 | Infrastructure Automation | Kubernetes operators/controllers, Terraform, cleaning up toil | Build a toil-reduction cleanup & check operator | 4h |
+| 33 | Incident Management | Response lifecycle, post-mortem structure, root cause analysis | Write an incident severity classifier & template builder | 4h |
+| 34 | Observability Pipelines | Metrics push/pull, alerting design, distributed tracing | Build Prometheus metrics parser & alert rule engine | 4h |
+| 35 | Review & Mock | Deep-dive review of system troubleshooting and SRE topics | Complete SRE automation project and system mock | 4h |
 
 ### 🧠 Skills to Improve
-- Understanding how LLMs work at a practical level
-- Building agents that use tools effectively
-- Testing non-deterministic AI systems
-- Deploying and monitoring agents in production
+- Understanding how operating systems and networks work under the hood
+- Diagnosing issues in distributed services
+- Defining metrics, SLOs, and blameless post-mortem analysis
+- Automating away repetitive operational toil
 
 ### 📊 Expected Outcomes
-- Build a working agent using Google ADK
-- Write tests for agent workflows
-- Deploy an agent to a cloud environment
-- Discuss agent architectures fluently in an interview
+- Navigate Linux internals and write troubleshooting scripts
+- Design metrics pipelines, SLO dashboards, and alerting rules
+- Implement retry policies with exponential backoff and jitter
+- Write automation scripts to eliminate manual operational toil
 
 ### ⚠️ Common Mistakes
-- Treating agents as simple API wrappers (they're not!)
-- Not handling LLM failures and edge cases
-- Ignoring cost and latency in agent design
-- Not testing agent behavior systematically
+- Confusing operational tasks (toil) with engineering solutions
+- Neglecting failure edge cases like network partitions or dependency outages
+- Underestimating the impact of alert fatigue
+- Not establishing clear, symptom-based alerting
 
 ### 💡 Practical Advice
-- **Read the ADK source code**: It's open-source, and understanding it shows initiative
-- **Build something**: Having a real project to discuss in the interview is invaluable
-- **Think enterprise**: Google's customers are enterprises — think about security, compliance, scale
-- **Study the ADK GitHub issues**: They reveal what features are being worked on
+- **Read the SRE Book**: It is the gold standard for Google's operational philosophy
+- **Automate everything**: Highlight any toil you've reduced or script you've written in past projects
+- **Focus on scale & fault-tolerance**: Always mention blast radius, latency, and SLOs
+- **Study real outages**: Read public post-mortems to learn how complex systems fail
 
 ### 🔧 If You Get Stuck
-- ADK hard to set up? Start with the official quickstart guide
-- LLMs confusing? Focus on practical usage, not mathematical theory
-- Can't deploy? Use Google Cloud's free tier or local Docker
+- Linux internals hard? Focus on core tools like strace, lsof, and basic processes
+- Kubernetes confusing? Focus on Pods, Deployments, and service networking first
+- Distributing systems complex? Read NeetCode's system design resources
 
 ---
 
@@ -282,7 +283,7 @@ Polish your behavioral interview skills, complete final mock interviews, and pre
 | 38 | System Design Final | End-to-end system design practice | 2 full system design mocks (45 min each) | 4h |
 | 39 | Coding Final (Hard) | Hard problem solving under pressure | Solve 3 Hard LeetCode problems (45 min each) | 4h |
 | 40 | Mock Interview — Full | Simulate complete Google interview loop | Coding + System Design + Behavioral (3 rounds) | 5h |
-| 41 | Role Fit & Portfolio | Present your projects, articulate your fit | Prepare your "Why Google" and "Why this role" answers | 3h |
+| 41 | Role Fit & Portfolio | Present your projects, articulate your fit | Prepare your "Why Google" and "Why SRE" answers | 3h |
 | 42 | Final Review & Application | Polish CV, submit application, final checklist | Submit application, review everything | 3h |
 
 ### 🧠 Skills to Improve
@@ -295,7 +296,7 @@ Polish your behavioral interview skills, complete final mock interviews, and pre
 - 8-10 polished STAR stories ready to deploy
 - Confident system design presentation ability
 - Consistent Medium problem solving in < 25 min
-- A compelling "Why Google + Why Agent Development" narrative
+- A compelling "Why Google + Why SRE" narrative
 
 ### ⚠️ Common Mistakes
 - Not practicing behavioral answers out loud
@@ -307,7 +308,7 @@ Polish your behavioral interview skills, complete final mock interviews, and pre
 - **Record yourself**: Record your behavioral answers and review them
 - **Get feedback**: Do at least 2 mock interviews with friends or online platforms (Pramp, Interviewing.io)
 - **Sleep well**: The last 3 days should be light review, not intensive study
-- **Have questions ready**: Prepare 5+ thoughtful questions for your interviewer about ADK and agent development
+- **Have questions ready**: Prepare 5+ thoughtful questions for your interviewer about SRE practices and production outages
 
 ### 🔧 If You Get Stuck
 - Can't find mock interview partners? Use Pramp (free) or Interviewing.io
@@ -327,8 +328,8 @@ By the end of this 6-week plan, you should be able to:
 | LeetCode Hard | Solve in < 45 minutes, 40%+ success rate |
 | System Design | Complete a design in 35 min with clear trade-offs |
 | Behavioral | 8-10 STAR stories, fluent delivery |
-| Agent Development | Built, tested, and deployed at least 1 agent project |
-| Google Knowledge | Deep understanding of ADK, GCP, and agent ecosystem |
+| SRE & Systems | Completed SRE automation project and configured monitoring |
+| Google Knowledge | Deep understanding of Google SRE Book, SLO model, and GCP |
 
 ---
 
