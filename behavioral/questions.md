@@ -1,0 +1,11 @@
+# Interviewer Questions
+- What kinds of projects is the team working on right now, and how do you decide what to prioritize next?
+- How do you measure the success of a project, and how do you ensure that the team is aligned on those goals?
+- How would you describe the most important outcomes you want this role to drive in the next 6–12 months?
+- How does this team typically collaborate—design docs, pairing, async reviews, regular stand‑ups, or something else?
+- What opportunities are there to explore adjacent areas (e.g., ML, infrastructure, product) if someone shows interest?
+- Is there anything about my background or answers that you’d like me to clarify, or that gives you hesitation about my fit for this role?
+- Based on our conversation, what would you recommend I focus on if I joined, to ramp up quickly and add value early?
+- What’s your favorite part about working here, and what’s something you wish you could change?
+- How do you support your team’s growth and development, and what opportunities are there for mentorship or learning new skills?
+- What’s the team’s approach to work-life balance?
